@@ -37,7 +37,7 @@
 \Author[1]{Matthew}{Mizielinksi}
 
 \affil[1]{Met Office Hadley Centre, FitzRoy Road, Exeter, EX1 3PB, UK}
-\affil[2]{Centre for Environmental Data Aanalysis, RAL Space, R25 - Room 1.22, STFC Rutherford Appleton Laboratory, Harwell Oxford, Didcot, OX11 0QX, UK}
+\affil[2]{Centre for Environmental Data Aanalysis, RAL Space, STFC Rutherford Appleton Laboratory, Harwell Oxford, Didcot, OX11 0QX, UK}
 
 %% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
 
@@ -67,54 +67,81 @@
 
 
 \begin{abstract}
-TEXT
+The PRIMAVERA project aims to develop a new generation of advanced and well-evaluated high-resolution global climate models. PRIMAVERA's Stream 1 simulations consist of seven different climate models being run at a standard and a higher resolution with common initial conditions and forcings to form a multi-model ensemble. The ensemble members were run a set of high performance computers across Europe. To allow the data from all models to be analysed it was transferred to the JASMIN super-data-cluster. At JASMIN the data was catalogued and details made available to users in the Data Management Tool (DMT). Users from across the project were able to query the available data using the DMT and to then login to JASMIN to analyse the data. Here we describe how the PRIMAVERA project used JASMIN's facilities to enable users to analyse this multi-model data set. We show how a facility such as JASMIN can be useful for other collaborative projects.
 \end{abstract}
 
 
-\copyrightstatement{TEXT}
+\copyrightstatement{Crown Copyright, Met Office}
 
 
 \introduction  %% \introduction[modified heading if necessary]
-TEXT
+
+The PRIMAVERA project aims to develop a new generation of advanced and well-evaluated high-resolution global climate models. One of PRIMAVERA's core components are the Stream 1 and Stream 2 simulations. These simulations consist of seven different climate models (AWI-CM-1-1, CMCC-CM2, CNRM-CM6-1, EC-Earth3P, ECMWF-IFS, HadGEM3-GC31 and MPI-ESM1-2) being run at their standard resolution (typically  250~km in the atmosphere and 100~km in the ocean) and at a higher resolution (25~km atmosphere and 8-25~km ocean). All models are run with common initial conditions and forcings using the HighResMIP protocol \citep{Haarsma2016}. The simulations were run on high performance computers (HPCs) across Europe. The scientists analysing the model outputs are based at 20 different institutes across Europe with assistance from other global scientists. Because these are global simulations at a high resolution, the total volume of data is expected to be around 1.6~petabytes (PB).
+
+In the planning for PRIMAVERA a Data Management Plan (DMP) was developed to allow this data to be stored, analysed and archived. The JASMIN super-data-cluster was selected for this purpose. The Data Management Tool (DMT) software was developed to implement the DMP. 
+
+\section{JASMIN}
+
+JASMIN is a super-data-cluster that was first installed in 2012 \cite{lawrence2013storing}. It is funded by the Natural Environment Research Council (NERC) and the UK Space Agency. JASMIN is operated by the Science and Technology Facilities Council (STFC). It is located at the STFC Rutherford Appleton Lab, Harwell, UK. JASMIN's Phase 4 update in September 2018 added 38.5~PB of storage co-located with the existing over 4000 cores of compute all of which is tied together with a low latency network. RAL has a fast connection to JANET, the UK's academic network, which in turn is connected to the G\'{E}ANT European network, allowing fast transfer of data from HPCs to JASMIN. JASMIN additionally has access to RAL's tape library for offline storage of data.
+
+The compute at JASMIN is split into interactive data analysis servers, the LOTUS batch processing system and some additional private cloud servers. Part of the storage is dedicated for the Centre for Environmental Data Analysis (CEDA) archive. The storage for individual projects is split into small chunks called group workspaces (GWS). 
+
+\section{PRIMAVERA}
+
+PRIMAVERA consists of eleven work packages (WPs). The Stream 1 and 2 simulations described here are produced and managed by two of the work packages. Several of the other WPs analyse these simulations and compare them and also compare them against existing simulations. The remaining WPs are carrying out model development work or running small simulations that don't need to be shared with other WPs. These remaining WPs had a small volume of storage on one of the GWS reserved for them. 
+
+The Stream 1 and 2 simulations follow the HighResMIP protocol and will be submitted to the 6th phase of the Coupled Model Intercomparison Project (CMIP6) \citep{Eyring2016}. The Stream 1 simulations consisted of a single ensemble from member at standard and high resolution from each climate model. As a result of the first analysis of the Stream 1 simulations it was decided that a component of Stream 2 should be additional ensemble members from some of Stream 1 models, but with a reduced data output to minimise the volume of data generated.
+
+\section{Data Management Plan}
+
+% does D9.1 on the external webpage need adding to zenodo so that it can be referenced?
 
 
-\section{Introduction}
-The PRIMAVERA project is a Horizon 2020 funded project that aims to develop a new generation of advanced and well-evaluated high-resolution global-climate models. PRIMAVERA is an acronym for PRocess...
+
+\subsection{JASMIN Resources Allocated}
+
+As a result of the DMP, PRIMAVERA was allocated 440 terabytes (TB) of storage split into 5 GWS. A server in the JASMIN internal cloud was allocated, which was given the domain name prima-dm.ceda.ac.uk and HTTPS access from outside of JASMIN was granted to it.
+
+\section{Data Management Tool}
 
 
-\subsection{HEADING}
-TEXT
 
 
-\subsubsection{HEADING}
-TEXT
+
+\section{Data Transfer}
+
+% include a discussion of the data transfer methods used and the rates achieved.
+
+
+%\subsubsection{HEADING}
 
 
 \conclusions  %% \conclusions[modified heading if necessary]
-TEXT
+Without access to JASMIN then the data analysis and sharing in the PRIMAVERA project would have been more difficult...
 
 %% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
 %% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
 
-\codeavailability{TEXT} %% use this section when having only software code available
+\codeavailability{The PRIMAVERA Data Management Tool's source code can be found in a publicly available GitHub repository distributed under a BSD 3-Clause license \citep{Seddon2019}.} 
+
 
 
 % \dataavailability{TEXT} %% use this section when having only data sets available
 
 
-\codedataavailability{TEXT} %% use this section when having data sets and software code available
+% \codedataavailability{TEXT} %% use this section when having data sets and software code available
 
 
-\sampleavailability{TEXT} %% use this section when having geoscientific samples available
+% \sampleavailability{TEXT} %% use this section when having geoscientific samples available
 
 
-\videosupplement{TEXT} %% use this section when having video supplements available
+% \videosupplement{TEXT} %% use this section when having video supplements available
 
 
-\appendix
-\section{}    %% Appendix A
-
-\subsection{}     %% Appendix A1, A2, etc.
+%\appendix
+%\section{}    %% Appendix A
+%
+%\subsection{}     %% Appendix A1, A2, etc.
 
 
 \noappendix       %% use this to mark the end of the appendix section
@@ -135,14 +162,14 @@ TEXT
 
 
 
-\authorcontribution{TEXT} %% this section is mandatory for the journals ACP and GMD. For all other journals it is strongly recommended to make use of this section
+\authorcontribution{MM and AS developed the PRIMAVERA data management plan. JS and AS then developed and implemented the DMT and managed the data upload and availability. JS led the writing of this paper with assistance and editing from the other authors.} %% this section is mandatory for the journals ACP and GMD. For all other journals it is strongly recommended to make use of this section
 
-\competinginterests{TEXT} %% this section is mandatory even if you declare that no competing interests are present
+\competinginterests{The authors declare that they have no conflict of interest.} %% this section is mandatory even if you declare that no competing interests are present
 
-\disclaimer{TEXT} %% optional section
+% \disclaimer{TEXT} %% optional section
 
 \begin{acknowledgements}
-TEXT
+The PRIMAVERA project is funded by the European Union's Horizon 2020 programme, Grant Agreement no. 641727. This work used JASMIN, the UK's collaborative data analysis environment (http://jasmin.ac.uk). The authors would like to thank all of the STFC staff who design and maintain JASMIN, without whom this work would not have been possible.
 \end{acknowledgements}
 
 
@@ -152,21 +179,21 @@ TEXT
 
 %% The reference list is compiled as follows:
 
-\begin{thebibliography}{}
-
-\bibitem[AUTHOR(YEAR)]{LABEL1}
-REFERENCE 1
-
-\bibitem[AUTHOR(YEAR)]{LABEL2}
-REFERENCE 2
-
-\end{thebibliography}
+%\begin{thebibliography}{}
+%
+%\bibitem[AUTHOR(YEAR)]{LABEL1}
+%REFERENCE 1
+%
+%\bibitem[AUTHOR(YEAR)]{LABEL2}
+%REFERENCE 2
+%
+%\end{thebibliography}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
 %%
-%% \bibliographystyle{copernicus}
-%% \bibliography{example.bib}
+\bibliographystyle{copernicus}
+\bibliography{jasmin-paper.bib}
 %%
 %% URLs and DOIs can be entered in your BibTeX file as:
 %%
