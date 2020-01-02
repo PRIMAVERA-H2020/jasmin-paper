@@ -67,7 +67,7 @@
 
 
 \begin{abstract}
-The PRIMAVERA project aims to develop a new generation of advanced and well-evaluated high-resolution global climate models. PRIMAVERA's Stream 1 simulations consist of seven different climate models being run at a standard and a higher resolution with common initial conditions and forcings to form a multi-model ensemble. The ensemble members were run a set of high performance computers across Europe. To allow the data from all models to be analysed it was transferred to the JASMIN super-data-cluster. At JASMIN the data was catalogued and details made available to users in the Data Management Tool (DMT). Users from across the project were able to query the available data using the DMT and to then login to JASMIN to analyse the data. Here we describe how the PRIMAVERA project used JASMIN's facilities to enable users to analyse this multi-model data set. We show how a facility such as JASMIN can be useful for similar multi-institute projects.
+The PRIMAVERA project aims to develop a new generation of advanced and well-evaluated high-resolution global climate models. PRIMAVERA's Stream 1 simulations consist of seven different climate models being run at a standard and a higher resolution with common initial conditions and forcings to form a multi-model ensemble. The ensemble members were run a set of high performance computers across Europe. To allow the data from all models to be analysed it was transferred to the JASMIN super-data-cluster. At JASMIN the data was catalogued and details made available to users in the Data Management Tool (DMT). Users from across the project were able to query the available data using the DMT and to then login to JASMIN to analyse the data. Here we describe how the PRIMAVERA project used JASMIN's facilities to enable users to analyse this multi-model data set. We show how a facility such as JASMIN can be useful for similar multi-institute projects to efficiently share, organise and analyse data.
 \end{abstract}
 
 
@@ -86,6 +86,8 @@ JASMIN is a super-data-cluster that was first installed in 2012 \cite{lawrence20
 
 The compute at JASMIN is split into interactive data analysis servers, the LOTUS batch processing system and some additional private cloud servers. Part of the storage is dedicated for the Centre for Environmental Data Analysis (CEDA) archive. The storage for individual projects is split into small chunks called group workspaces (GWS). 
 
+All hosts at JASMIN run a modern Linux operating system and have a suite of modern software tools and programming languages for analysing and manipulating common data formats
+
 \section{PRIMAVERA}
 
 PRIMAVERA consists of eleven work packages (WPs). The Stream 1 and 2 simulations described here are produced and managed by two of the work packages. Several of the other WPs analyse these simulations and compare them and also compare them against existing simulations. The remaining WPs are carrying out model development work or running small simulations that don't need to be shared with other WPs. These remaining WPs had a small volume of storage on one of the GWS reserved for them. 
@@ -96,35 +98,77 @@ The Stream 1 and 2 simulations follow the HighResMIP protocol and will be submit
 
 % does D9.1 on the external webpage need adding to zenodo so that it can be referenced?
 
-\begin{figure}[t]
-\includegraphics[width=8.3cm]{original_dmp.png}
+\begin{figure*}[t]
+\includegraphics[width=12cm]{original_dmp.png}
 \caption{The workflow developed in the Data Management Plan.}
 \label{dmp_workflow}
-\end{figure}
+\end{figure*}
 
-Figure~\ref{dmp_worflow} shows the workflow developed in the Data Management Plan (DMP). The workflow can be summarised as taking the analysis to the data. Rather than having copies of the data at users' home institutes, a single copy of the data will be collected at JASMIN. Users are then able to undertake all of the analysis of the data at JASMIN. In the past users have downloaded the files that they want to analyse to computing facilities at their home institute. With the volume of data being produced by PRIMAVERA, it is no longer feasible for everyone to take their own copy of the data.
+Figure~\ref{dmp_workflow} shows the workflow developed in the Data Management Plan (DMP). The workflow can be summarised as taking the analysis to the data. Rather than having copies of the data at users' home institutes, a single copy of the data will be collected at JASMIN. Users are then able to undertake all of the analysis of the data at JASMIN. In the past users have downloaded the files that they want to analyse to computing facilities at their home institute. With the volume of data being produced by PRIMAVERA, it is no longer feasible for everyone to take their own copy of the data.
 
-Step 1 in the DMP workflow is the generation of data  by the modelling centres. The simulations are run at a variety of HPCs across Europe. Each model typically has its own proprietary output file format. Because data was being submitted to HighResMIP the CMIP6 data and metadata standards were chosen for this project~\citep{gmd-11-3659-2018}. These standards include files being saved in netCDF format, the file naming structure and the data request. The HighResMIP data request was developed as part of the CMIP6 data request process. Some additional variables were identified as being required for specific PRIMAVERA analysis bit not being required for HighResMIP. These additional PRIMAVERA specific variables are shown in the PRIMAVERA specific MIP tables~\citep{Nadeau2018}.
+Step 1 in the DMP workflow is the generation of data  by the modelling centres. The simulations are run at a variety of HPCs across Europe. Each model typically has its own proprietary output file format. Because data was being submitted to HighResMIP the CMIP6 data and metadata standards were chosen for this project~\citep{gmd-11-3659-2018}. These standards include files being saved in netCDF format, the file naming structure and the data request. The HighResMIP data request was developed as part of the CMIP6 data request process. Some additional variables were identified as being required for specific PRIMAVERA analysis bit not being required for HighResMIP. These additional PRIMAVERA specific variables are shown in the PRIMAVERA specific MIP tables~\citep{Nadeau2018}. These PRIMAVERA specific variables will analysed internally to the project at JASMIN and then archived by CEDA separately to the HighResMIP variables. If data has been output by the climate models in a proprietary format then it was post-processed or CMORized (Climate Model Output Rewriter~\cite{Nadeau2019}) into standards compliant files.
+
+The next step in the workflow is the transfer of the data from the HPCs or post-processing systems to JASMIN. A discussion on the transfer techniques used and the rates achieved is given later. The data is uploaded to one of the PRIMAVERA GWS' at JASMIN.
+
+Step 3 in the workflow is the validation of the data. Validation includes checking that the metadata standards have been complied with and the extraction of metadata to store in the PRIMAVERA database~\cite{Seddon2020}. Once the validation is complete then the files are moved from GWS to tape. 
+
+After upload and validation of the data, during Step 4 users analyse and work with the uploaded data. The Data Management Tool's (DMT's) web interface allows users to search the database to identify available data. The DMT shows whether files are currently available on disk, or only on tape. If files are only available on tape then users can request that they are restored to tape using the the web interface. The DMT sends an email when their requested data has been restored from tape and is available on GWS. When users have finished working with a dataset then they can mark it as complete using the web interface. If no users are currently using a dataset then it is deleted from GWS to free-up space for other data.
+
+Steps 5 and 6 in the workflow were managed by CEDA rather than the PRIMAVERA project. Uploaded data is ingested into the CEDA archives and can then be disseminated to the global community using CEDA's Earth System Grid Federation (ESGF) node. 
 
 
 \subsection{JASMIN Resources Allocated}
 
-As a result of the DMP, PRIMAVERA was allocated 440 terabytes (TB) of storage split into 5 GWS. A server in the JASMIN internal cloud was allocated, which was given the domain name prima-dm.ceda.ac.uk and HTTPS access from outside of JASMIN was granted to it.
+As a result of the DMP, PRIMAVERA was allocated 440~terabytes (TB) of storage split across 5~group workspaces. A server in the JASMIN internal cloud was allocated, which was given a domain name and HTTPS access from outside of JASMIN was granted to it.
+
+It was estimated that around 2~PB of data would be generated by the project. Not all data could therefore be held on disk and the DMT would have to allow data to be efficiently and reliably moved between tape and GWS.
 
 \subsection{Typical Analysis Workflow}
 
-% Usual diagram of testing a bit then running on LOTUS.
+\begin{figure}[t]
+	\includegraphics[width=8.3cm]{analysis_workflow.png}
+	\caption{The workflow required by users working with the PRIMAVERA data at JASMIN.}
+	\label{analysis_workflow}
+\end{figure}
+
+Figure~\ref{analysis_workflow} shows the workflow that must be adopted by users working with the PRIMAVERA data at JASMIN. Users would first use th DMT's web interface to identify what data had been uploaded. If they data that they required was not available on disk then they use the DMT's web interface to request that a subset of their data is restored from tape to disk. Once this subset of data is available then they can work on JASMIN's interactive servers to develop and test their analysis code. Once this code has been tested and is working then they use the DMT to request that all of the data that they require is restored from tape to disk. Once the full dataset is available on GWS then the analysis can be run on the LOTUS batch processing cluster. Finally, once users are happy with the results of their analysis then they mark the data as finished in the DMT's web interface. The DMT can then deleted the data from disk to create space for other users' data.
 
 \section{Data Management Tool}
 
+The PRIMAVERA Data Management Tool (DMT) was developed to control the flow of PRIMAVERA data around JASMIN and to allow users to query the available data. The DMT consists of a PostgreSQL database and some custom software written in the Python programming language and uses the Django web framework. The database is installed on the dedicated server, along with a web server and the software. The software was also installed on the JASMIN filesystem and the server's firewall opened to allow database access from JASMIN's interactive servers and from all hosts in the LOTUS cluster. This access allowed the validation of uploaded data to be submitted to the batch processing cluster, where it had access to many nodes, allowing large uploads to be processed in parallel, which is important for processing steps that take a long time, such as calculating checksums.
 
+\begin{figure}[t]
+	\includegraphics[width=12cm]{dmt_query.png}
+	\caption{The workflow required by users working with the PRIMAVERA data at JASMIN.}
+	\label{dmt_query}
+\end{figure}
 
+A typical screenshot from a user querying the DMT's web interface is shown in Figure~\ref{dmt_query}. In this example the variable \textit{rsut}, the top of atmosphere outgoing shortwave radiation from the \textit{highres-future}, coupled future experiment is being queried. A value of ``offline'' in the ``Online Status'' column shows that the files for this simulation are currently only available on tape, a value of ``partial'' shows that some files are on disk, but some are only available on tape and ``online'' shows that all files are available on disk. The ``Request Retrieval?'' column allows users to indicate that they want to work with this data. If the data needs to be restored from tape to disk then the user is emailed when the data becomes available. The DMT contains a similar page to allow users to view the data that they've requested and to indicate that it has been finished with and can be deleted from disk if required.
 
+The DMT software is distributed under an open source license~\cite{Seddon2019}. The software was a proof of concept. The software worked well for the PRIMAVERA project but does make some assumptions about the layout of the storage allocated to PRIMAVERA at JASMIN and about the structure of the PRIMAVERA data. The DMT software will require refactoring before it can be used in other projects.
 
 \section{Data Transfer}
 
-% include a discussion of the data transfer methods used and the rates achieved.
+\begin{table}[t]
+\caption{The rates achieved while transferring data from the data providers to JASMIN.}
+\begin{tabular}{lll}
+\tophline
+Transfer from & Rate achieved & Protocol used \\
+\middlehline
+Reading, UK & 85~MB/s & 4 parallel \texttt{rsync -rvz --rsh="ssh -c arcfour"} \\
+Toulouse, France & 12.5~MB/s & 4 BBCP jobs in parallel, with 4 streams each \\
+Exeter, UK & 30~MB/s & 5 \texttt{moo get} in parallel \\
+Bologna, Italy & 33.5~B/s average, 69.0~MB/s peak & gridftp, with 4 concurrent FTP connections 8 process in parallel \\
+Hamburg, Germany & 20 to 55~MB/s & globus-url-copy \\
+Barcelona, Spain & 13~MB/s & rsync \\
+Bologna (Cineca), Italy & 200 to 300 MB/s & 5 parallel \texttt{rsync -av -e "ssh -c arcfour"} \\
+\bottomhline
+\end{tabular}
+\belowtable{} % Table Footnotes
+\label{rates_achieved}
+\end{table}
 
+Table~\ref{rates_achieved} shows the sustained rates achieved when transferring data to JASMIN in megabytes per second (MB/s).
 
 
 \section{Future Opportunities}
