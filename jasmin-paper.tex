@@ -34,7 +34,7 @@
 
 \Author[1]{Jon}{Seddon}
 \Author[2]{Ag}{Stephens}
-\Author[1]{Matthew}{Mizielinksi}
+\Author[1]{Matthew S.}{Mizielinski}
 
 \affil[1]{Met Office Hadley Centre, FitzRoy Road, Exeter, EX1 3PB, UK}
 \affil[2]{Centre for Environmental Data Aanalysis, RAL Space, STFC Rutherford Appleton Laboratory, Harwell Oxford, Didcot, OX11 0QX, UK}
@@ -96,11 +96,24 @@ The Stream 1 and 2 simulations follow the HighResMIP protocol and will be submit
 
 % does D9.1 on the external webpage need adding to zenodo so that it can be referenced?
 
+\begin{figure}[t]
+\includegraphics[width=8.3cm]{original_dmp.png}
+\caption{The workflow developed in the Data Management Plan.}
+\label{dmp_workflow}
+\end{figure}
+
+Figure~\ref{dmp_worflow} shows the workflow developed in the Data Management Plan (DMP). The workflow can be summarised as taking the analysis to the data. Rather than having copies of the data at users' home institutes, a single copy of the data will be collected at JASMIN. Users are then able to undertake all of the analysis of the data at JASMIN. In the past users have downloaded the files that they want to analyse to computing facilities at their home institute. With the volume of data being produced by PRIMAVERA, it is no longer feasible for everyone to take their own copy of the data.
+
+Step 1 in the DMP workflow is the generation of data  by the modelling centres. The simulations are run at a variety of HPCs across Europe. Each model typically has its own proprietary output file format. Because data was being submitted to HighResMIP the CMIP6 data and metadata standards were chosen for this project~\citep{gmd-11-3659-2018}. These standards include files being saved in netCDF format, the file naming structure and the data request. The HighResMIP data request was developed as part of the CMIP6 data request process. Some additional variables were identified as being required for specific PRIMAVERA analysis bit not being required for HighResMIP. These additional PRIMAVERA specific variables are shown in the PRIMAVERA specific MIP tables~\citep{Nadeau2018}.
 
 
 \subsection{JASMIN Resources Allocated}
 
 As a result of the DMP, PRIMAVERA was allocated 440 terabytes (TB) of storage split into 5 GWS. A server in the JASMIN internal cloud was allocated, which was given the domain name prima-dm.ceda.ac.uk and HTTPS access from outside of JASMIN was granted to it.
+
+\subsection{Typical Analysis Workflow}
+
+% Usual diagram of testing a bit then running on LOTUS.
 
 \section{Data Management Tool}
 
@@ -112,6 +125,17 @@ As a result of the DMP, PRIMAVERA was allocated 440 terabytes (TB) of storage sp
 
 % include a discussion of the data transfer methods used and the rates achieved.
 
+
+
+\section{Future Opportunities}
+
+\subsection{Software}
+
+% The DMT needs generalising
+
+\subsection{Hardware}
+
+% Cloud - opportunities, cost, Pangeo
 
 %\subsubsection{HEADING}
 
@@ -162,7 +186,7 @@ Without access to JASMIN then the data analysis and sharing in the PRIMAVERA pro
 
 
 
-\authorcontribution{MM and AS developed the PRIMAVERA data management plan. JS and AS then developed and implemented the DMT and managed the data upload and availability. JS led the writing of this paper with assistance and editing from the other authors.} %% this section is mandatory for the journals ACP and GMD. For all other journals it is strongly recommended to make use of this section
+\authorcontribution{MSM and AS developed the PRIMAVERA data management plan. JS and AS then developed and implemented the DMT and managed the data upload and availability. JS led the writing of this paper with assistance and editing from the other authors.} %% this section is mandatory for the journals ACP and GMD. For all other journals it is strongly recommended to make use of this section
 
 \competinginterests{The authors declare that they have no conflict of interest.} %% this section is mandatory even if you declare that no competing interests are present
 
