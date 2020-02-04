@@ -155,7 +155,7 @@ The DMT software~\citep{Seddon2019} is distributed under an open source license.
 \section{Data Transfer}
 \label{transfer_rates}
 
-Table~\ref{rates_achieved} shows the sustained rates achieved when transferring data from the data providers to JASMIN in megabytes per second (MB~s$^{-1}$). JASMIN contains several servers in a data transfer zone, whose connection to the Internet and to JASMIN has been designed for the maximum throughput of data transfers. At the start of the project it had been assumed that parallel transfer protocols such as BBCP or GridFTP would provide the best transfer rates and data providers were encouraged to use these. In reality, most data providers used the techniques that they were most familiar with as long as they gave sufficiently fast transfer rates. The rates achieved depend on many factors including the filesystem at either end, the load on the server and network at either end and the network between the servers. The best transfer rate from a site was over 200~MB~s$^{-1}$, which is 16.5 TB per day. Typical rates were 30~MB~s$^{-1}$ (2.5 TB per day). These rates were sufficient to complete the project on time. It is hoped that with further optimisation work that transfer rates of 5.0~TB per day could be achieved.
+Table~\ref{rates_achieved} shows the sustained rates achieved when transferring data from the data providers to JASMIN in megabytes per second (MB~s$^{-1}$). JASMIN contains several servers in a data transfer zone, whose connection to the Internet and to JASMIN has been designed for the maximum throughput of data transfers. At the start of the project it had been assumed that parallel transfer protocols such as BBCP or GridFTP would provide the best transfer rates and data providers were encouraged to use these. In reality, most data providers used the techniques that they were most familiar with as long as they gave sufficiently fast transfer rates. The rates achieved depend on many factors including the file system at either end, the load on the server and network at either end and the network between the servers. The best transfer rate from a site was over 200~MB~s$^{-1}$, which is 16.5 TB per day. Typical rates were 30~MB~s$^{-1}$ (2.5 TB per day). These rates were sufficient to complete the project on time. It is hoped that with further optimisation work that transfer rates of 5.0~TB per day could be achieved.
 
 The collection of all of PRIMAVERA's data at JASMIN was only possible because of the transfer rates that were achieved. If JASMIN had not been available, then the project would have been dependent upon the transfer rates that could be achieved between many different sites.
 
@@ -181,7 +181,7 @@ Significant design and development work is required before projects like PRIMAVE
 
 The DMT software worked well for the PRIMAVERA project. It was the first time that such a tool had been developed. The current DMT implementation makes some assumptions about the layout of the storage allocated to PRIMAVERA at JASMIN and about the structure of the PRIMAVERA data. It will require refactoring before it can be used in other projects. The current version of the DMT has shown that such a tool is feasible and can improve the efficiency of data management, discovery and storage in such a project.
 
-New software technologies such as Pangeo offer further benefits if a public cloud solution was used or if external access was available to multiple JASMIN-like facilities around the world~\citep{Pangeo}. Pangeo is a collection of software packages to enable geoscience research in cloud and HPC environments. It allows data to be distributed across different storage areas and schedules processing on the compute attached to each storage. Pangeo could reduce the volume of data needing to be transferred in future projects. Model output data would be uploaded to a cloud location close to the data provider. Just the metadata would be uploaded to a central (or distributed) catalogue. Tools such as Pangeo would then run users' analysis software on the compute where each dataset is stored and only the small volume of analysis results would need to to transferred back to the user.
+New software technologies such as Pangeo offer further benefits if a public cloud solution was used or if external access was available to multiple JASMIN-like facilities around the world~\citep{Pangeo}. Pangeo is a collection of software packages to enable Earth science research in cloud and HPC environments. It allows data to be distributed across different storage areas and schedules processing on the compute attached to each storage. Pangeo could reduce the volume of data needing to be transferred in future projects. Model output data would be uploaded to a cloud location close to the data provider. Just the metadata would be uploaded to a central (or distributed) catalogue. Tools such as Pangeo would then run users' analysis software on the compute where each dataset is stored and only the small volume of analysis results would need to to transferred back to the user.
 
 \conclusions  %% \conclusions[modified heading if necessary]
 
@@ -196,7 +196,7 @@ The tools developed by the PRIMAVERA project have successfully demonstrated the 
 %% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
 %% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
 
-\codeavailability{The PRIMAVERA Data Management Tool's source code can be found in a publicly available GitHub repository distributed under a BSD 3-Clause license \citep{Seddon2019}. Additional tools are similarly availble in the validaton tool~\citep{Seddon2020} and MIP tables~\citep{Nadeau2018} with similar licenses.}
+\codeavailability{The PRIMAVERA Data Management Tool's source code can be found in a publicly available GitHub repository distributed under a BSD 3-Clause license \citep{Seddon2019}. Additional tools are similarly available in the validation tool~\citep{Seddon2020} and MIP tables~\citep{Nadeau2018} with similar licenses.}
 
 
 
@@ -334,7 +334,7 @@ The PRIMAVERA project is funded by the European Union's Horizon 2020 programme, 
 %
 %%% TABLES
 %%%
-%%% The different columns must be seperated with a & command and should
+%%% The different columns must be separated with a & command and should
 %%% end with \\ to identify the column brake.
 %
 %%% ONE-COLUMN TABLE
@@ -397,7 +397,7 @@ The PRIMAVERA project is funded by the European Union's Horizon 2020 programme, 
 %%% Vectors are identified in bold italic font using \vec{x}
 %%% Matrices are identified in bold roman font
 %%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
-%%% The character * should not be applied as mutliplication sign
+%%% The character * should not be applied as multiplication sign
 %
 %
 %%% EQUATIONS
