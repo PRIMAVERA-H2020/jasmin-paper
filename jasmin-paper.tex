@@ -152,6 +152,12 @@ A typical screenshot from a user querying the DMT's web interface is shown in Fi
 
 The DMT software~\citep{Seddon2019} is distributed under an open source license. Development of the DMT began in April 2016 and the first data was published in the DMT in May 2017, during this period one developer was largely working full time on its development. Development work has continued intermittently since then to improve the flow of data through the system and to allow the publication of data to the ESGF. 
 
+
+\subsection{DMT Internal Structure}
+Internally, the DMT's primary data object is a DataRequest. DataRequest objects consist of a VariableRequest object and details of the institute, climate model, experiment and variant label providing this DataRequest. The VariableRequest objects specify a CMIP6 variable and table along with additional metadata. The VariableRequest objects were created directly from the CMIP6 HighResMIP data request. During the development of the data management plan, a shared spreadsheet was created from the HighResMIP data request and each institute edited the spreadsheet to indicate the variables that they would generate. A facility to allow institutes to update the data that they provide during the project is available.
+
+A DataFile object is created for each file uploaded to JASMIN during the validation process. Each DataFile is related to a DataRequest. All views in the DMT's web interface are generated from these DataRequest objects. All objects are Django model objects.
+
 \section{Data Transfer}
 \label{transfer_rates}
 
