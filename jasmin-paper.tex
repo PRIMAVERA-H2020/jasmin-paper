@@ -86,7 +86,7 @@ If JASMIN had not been available for PRIMAVERA to use then it would have been ne
 
 JASMIN is a super-data-cluster that was installed in 2012 \citep{lawrence2013storing}. It is funded by the Natural Environment Research Council (NERC) and the UK Space Agency, and operated by the Science and Technology Facilities Council (STFC). It is located at the STFC Rutherford Appleton Lab, Harwell, UK. JASMIN's Phase 4 update in September 2018 added 38.5~PB of new storage co-located with the existing 4000 cores of compute. The storage and compute are tied together with a low latency network. RAL has a fast connection to JANET, the UK's academic network, which in turn is connected to the G\'{E}ANT European network, allowing fast transfer of data from the HPCs used to run the PRIMAVERA simulations to JASMIN. Additionally, JASMIN is connected to an on-site tape library for the offline storage of data.
 
-The compute at JASMIN is split into interactive data analysis servers, the LOTUS batch processing system and some additional private cloud servers. Part of the storage is dedicated for the Centre for Environmental Data Analysis' (CEDA) archive. The storage for individual projects is split into small chunks called group workspaces (GWS). Each GWS is typically up to 100~terabytes (TB).
+The compute at JASMIN is split into interactive data analysis servers, the LOTUS batch processing system and some additional private cloud servers. Part of the storage is dedicated for the Centre for Environmental Data Analysis (CEDA) archive. The storage for individual projects is split into small chunks called group workspaces (GWS). Each GWS is typically up to 100~terabytes (TB).
 
 All compute hosts at JASMIN run the Linux operating system and have a suite of modern software tools and programming languages installed for analysing and manipulating common Earth science data formats.
 
@@ -138,8 +138,6 @@ Figure~\ref{analysis_workflow} shows the workflow that must be adopted by users 
 
 The DMT was developed to track and control the flow of PRIMAVERA data around JASMIN and to allow users to query what data is available and its location. It consists of a PostgreSQL database and custom software written in the Python programming language, using the Django web framework. The database is installed on a dedicated server, along with web server software and the DMT application. The software was also installed on the JASMIN file system and the server's firewall opened to allow database access from JASMIN's interactive servers, all hosts in the LOTUS cluster and the tape servers. Access to the database from LOTUS allows the validation of uploaded data to be submitted to the batch processing cluster, allowing large uploads to be processed in parallel, which was important for processing steps that take a long time, such as calculating checksums.
 
-TODO talk about checksums.
-
 \begin{figure}[t]
 	\includegraphics[width=12cm]{fig03.png}
 	\caption{A screenshot from the DMT's web interface showing the data available for one variable from the coupled future experiment.}
@@ -150,11 +148,12 @@ A typical screenshot from a user querying the DMT's web interface is shown in Fi
 
 The DMT software~\citep{Seddon2019} is distributed under an open source license. Development of the DMT began in April 2016 and the first data was published in the DMT in May 2017, during this period one developer was largely working full time on its development. Development work has continued intermittently since then to improve the flow of data through the system and to allow the publication of data to the ESGF. 
 
-
 \subsection{DMT Internal Structure}
 Internally, the DMT's primary data object is a DataRequest. The DataRequest object consists of a VariableRequest object along with details of the institute, climate model, experiment and variant label. The VariableRequest object specifies a CMIP6 variable and MIP table along with additional metadata. VariableRequest objects are created directly from the CMIP6 HighResMIP data request. During the development of the data management plan, a shared spreadsheet was created from the HighResMIP data request and each institute edited the spreadsheet to indicate the variables that they would generate. The DataRequest objects were created programmatically from this spreadsheet. A facility to allow institutes to update the data that they provide during the project is available.
 
 A DataFile object is created for each file uploaded to JASMIN during the validation process. Each DataFile is related to a DataRequest. All views in the DMT's web interface are generated from these DataRequest objects. All objects are mapped to database tables using the Django object-relational mapper (ORM).
+
+A checksum is calculated for each file submitted to the DMT. The checksums are used throughout the workflow as files are moved from tape to disk to ensure their integrity.
 
 \section{Data Transfer}
 \label{transfer_rates}
