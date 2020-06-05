@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -29,6 +29,19 @@ CEDA: {Centre for Environmental Data Analysis Archive Catalogue},
 CEDA: {CMIP6 CEDA ESGF Node},
   \urlprefix\url{https://esgf-index1.ceda.ac.uk/search/cmip6-ceda/}, last
   access: 2 June, 2020{\natexlab{b}}.
+
+\bibitem[{Cinquini et~al.(2014)Cinquini, Crichton, Mattmann, Harney, Shipman,
+  Wang, Ananthakrishnan, Miller, Denvil, Morgan, Pobre, Bell, Doutriaux, Drach,
+  Williams, Kershaw, Pascoe, Gonzalez, Fiore, and Schweitzer}]{ESGFCinquini}
+Cinquini, L., Crichton, D., Mattmann, C., Harney, J., Shipman, G., Wang, F.,
+  Ananthakrishnan, R., Miller, N., Denvil, S., Morgan, M., Pobre, Z., Bell,
+  G.~M., Doutriaux, C., Drach, R., Williams, D., Kershaw, P., Pascoe, S.,
+  Gonzalez, E., Fiore, S., and Schweitzer, R.: {The Earth System Grid
+  Federation: An open infrastructure for access to distributed geospatial
+  data}, Future Generation Computer Systems, 36, 400--417,
+  \doi{https://doi.org/10.1016/j.future.2013.07.002},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0167739X13001477},
+  2014.
 
 \bibitem[{Django(2019)}]{Django}
 Django: {Django}, \urlprefix\url{https://djangoproject.com/}, last access: 12
@@ -82,16 +95,6 @@ Juckes, M., Taylor, K.~E., Durack, P.~J., Lawrence, B., Mizielinski, M.~S.,
   Development, 13, 201--224, \doi{10.5194/gmd-13-201-2020},
   \urlprefix\url{https://www.geosci-model-dev.net/13/201/2020/}, 2020.
 
-\bibitem[{{Karl E. Taylor, Martin Juckes, V. Balaji, Luca Cinquini,
-  S{\'{e}}bastien Denvil, Paul J. Durack, Mark Elkington, Eric Guilyardi, Slava
-  Kharin, Michael Lautenschlager, Bryan Lawrence, Denis Nadeau} and
-  Stockhause(2018)}]{GloablAttr}
-{Karl E. Taylor, Martin Juckes, V. Balaji, Luca Cinquini, S{\'{e}}bastien
-  Denvil, Paul J. Durack, Mark Elkington, Eric Guilyardi, Slava Kharin, Michael
-  Lautenschlager, Bryan Lawrence, Denis Nadeau} and Stockhause, M.: {CMIP6
-  Global Attributes, DRS, Filenames, Directory Structure, and CV's},
-  \urlprefix\url{http://goo.gl/v1drZl}, 2018.
-
 \bibitem[{Lawrence et~al.(2013)Lawrence, Bennett, Churchill, Juckes, Kershaw,
   Pascoe, Pepler, Pritchard, and Stephens}]{lawrence2013storing}
 Lawrence, B.~N., Bennett, V.~L., Churchill, J., Juckes, M., Kershaw, P.,
@@ -137,7 +140,7 @@ Pangeo: {Pangeo project web page}, \urlprefix\url{https://pangeo.io/}, last
   access: 2 June, 2020.
 
 \bibitem[{PRIMAVERA(2015)}]{GrantAgree}
-PRIMAVERA: {Grant Agreement number: 641727 PRocess-based climate sIMulation:
+PRIMAVERA: {Grant Agreement number: 641727 - PRocess-based climate sIMulation:
   AdVances in high resolution modelling and European climate Risk Assessment
   (PRIMAVERA)}, \doi{10.5281/ZENODO.3874429},
   \urlprefix\url{https://zenodo.org/record/3874429}, 2015.
@@ -190,5 +193,13 @@ Stratton, R.~A., Senior, C.~A., Vosper, S.~B., Folwell, S.~S., Boutle, I.~A.,
   Regional Climate Simulation with the Met Office Unified Model: CP4-Africa},
   Journal of Climate, 31, 3485--3508, \doi{10.1175/JCLI-D-17-0503.1},
   \urlprefix\url{https://doi.org/10.1175/JCLI-D-17-0503.1}, 2018.
+
+\bibitem[{Taylor et~al.(2018)Taylor, Juckes, Balaji, Cinquini, Denvil, Durack,
+  Elkington, Guilyardi, Kharin, Lautenschlager, Lawrence, Nadeau, and
+  Stockhause}]{GloablAttr}
+Taylor, K.~E., Juckes, M., Balaji, V., Cinquini, L., Denvil, S., Durack, P.~J.,
+  Elkington, M., Guilyardi, E., Kharin, S., Lautenschlager, M., Lawrence, B.,
+  Nadeau, D., and Stockhause, M.: {CMIP6 Global Attributes, DRS, Filenames,
+  Directory Structure, and CV's}, \urlprefix\url{http://goo.gl/v1drZl}, 2018.
 
 \end{thebibliography}
