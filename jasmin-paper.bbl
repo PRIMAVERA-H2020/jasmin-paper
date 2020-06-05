@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -29,6 +29,10 @@ CEDA: {Centre for Environmental Data Analysis Archive Catalogue},
 CEDA: {CMIP6 CEDA ESGF Node},
   \urlprefix\url{https://esgf-index1.ceda.ac.uk/search/cmip6-ceda/}, last
   access: 2 June, 2020{\natexlab{b}}.
+
+\bibitem[{CEDA(2020{\natexlab{c}})}]{JASMINdocs}
+CEDA: {JASMIN help documentation}, \urlprefix\url{https://help.jasmin.ac.uk/},
+  last access: 4 June, 2020{\natexlab{c}}.
 
 \bibitem[{Cinquini et~al.(2014)Cinquini, Crichton, Mattmann, Harney, Shipman,
   Wang, Ananthakrishnan, Miller, Denvil, Morgan, Pobre, Bell, Doutriaux, Drach,
