@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -17,40 +17,53 @@ Balaji, V., Taylor, K.~E., Juckes, M., Lawrence, B.~N., Durack, P.~J.,
   Nikonov, S., Radhakrishnan, A., Stockhause, M., Weigel, T., and Williams, D.:
   {Requirements for a global data infrastructure in support of CMIP6},
   Geoscientific Model Development, 11, 3659--3680,
-  \doi{10.5194/gmd-11-3659-2018},
-  \urlprefix\url{https://www.geosci-model-dev.net/11/3659/2018/}, 2018.
+  \doi{10.5194/gmd-11-3659-2018}, 2018.
 
 \bibitem[{CEDA(2020{\natexlab{a}})}]{CEDAArchive}
 CEDA: {Centre for Environmental Data Analysis Archive Catalogue},
-  \urlprefix\url{https://catalogue.ceda.ac.uk/}, last access: 2 June,
+  \urlprefix\url{https://catalogue.ceda.ac.uk/}, last access: 2 June 2020,
   2020{\natexlab{a}}.
 
 \bibitem[{CEDA(2020{\natexlab{b}})}]{CEDAESGF}
 CEDA: {CMIP6 CEDA ESGF Node},
   \urlprefix\url{https://esgf-index1.ceda.ac.uk/search/cmip6-ceda/}, last
-  access: 2 June, 2020{\natexlab{b}}.
+  access: 2 June 2020, 2020{\natexlab{b}}.
+
+\bibitem[{CEDA(2020{\natexlab{c}})}]{JASMINdocs}
+CEDA: {JASMIN help documentation}, \urlprefix\url{https://help.jasmin.ac.uk/},
+  last access: 4 June 2020, 2020{\natexlab{c}}.
+
+\bibitem[{Cinquini et~al.(2014)Cinquini, Crichton, Mattmann, Harney, Shipman,
+  Wang, Ananthakrishnan, Miller, Denvil, Morgan, Pobre, Bell, Doutriaux, Drach,
+  Williams, Kershaw, Pascoe, Gonzalez, Fiore, and Schweitzer}]{ESGFCinquini}
+Cinquini, L., Crichton, D., Mattmann, C., Harney, J., Shipman, G., Wang, F.,
+  Ananthakrishnan, R., Miller, N., Denvil, S., Morgan, M., Pobre, Z., Bell,
+  G.~M., Doutriaux, C., Drach, R., Williams, D., Kershaw, P., Pascoe, S.,
+  Gonzalez, E., Fiore, S., and Schweitzer, R.: {The Earth System Grid
+  Federation: An open infrastructure for access to distributed geospatial
+  data}, Future Generation Computer Systems, 36, 400--417,
+  \doi{https://doi.org/10.1016/j.future.2013.07.002}, 2014.
 
 \bibitem[{Django(2019)}]{Django}
 Django: {Django}, \urlprefix\url{https://djangoproject.com/}, last access: 12
-  February, 2019.
+  February 2020, 2019.
 
 \bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer,
   and Taylor}]{Eyring2016}
 Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
   R.~J., and Taylor, K.~E.: {Overview of the Coupled Model Intercomparison
   Project Phase 6 (CMIP6) experimental design and organization}, Geoscientific
-  Model Development, 9, 1937--1958, \doi{10.5194/gmd-9-1937-2016},
-  \urlprefix\url{https://www.geosci-model-dev.net/9/1937/2016/}, 2016.
+  Model Development, 9, 1937--1958, \doi{10.5194/gmd-9-1937-2016}, 2016.
 
 \bibitem[{Foster(2011)}]{Foster}
 Foster, I.: {Globus Online: Accelerating and Democratizing Science through
   Cloud-Based Services}, IEEE Internet Computing, 15, 70--73,
   \doi{10.1109/MIC.2011.64}, 2011.
 
-\bibitem[{Globus(2020)}]{Globus}
+\bibitem[{Globus(2019)}]{Globus}
 Globus: globus-toolkit,
-  \urlprefix\url{https://github.com/globus/globus-toolkit}, last access: 4
-  June, 2020.
+  \urlprefix\url{https://github.com/globus/globus-toolkit}, last access: 4 June
+  2020, 2019.
 
 \bibitem[{Haarsma et~al.(2016)Haarsma, Roberts, Vidale, Senior, Bellucci, Bao,
   Chang, Corti, Fu{\v{c}}kar, Guemas, von Hardenberg, Hazeleger, Kodama,
@@ -63,12 +76,12 @@ Haarsma, R.~J., Roberts, M.~J., Vidale, P.~L., Senior, C.~A., Bellucci, A.,
   Scoccimarro, E., Semmler, T., Small, J., and von Storch, J.-S.: {High
   Resolution Model Intercomparison Project (HighResMIP v1.0) for CMIP6},
   Geoscientific Model Development, 9, 4185--4208,
-  \doi{10.5194/gmd-9-4185-2016},
-  \urlprefix\url{https://www.geosci-model-dev.net/9/4185/2016/}, 2016.
+  \doi{10.5194/gmd-9-4185-2016}, 2016.
 
-\bibitem[{Hanushevsky(2020)}]{bbcp}
+\bibitem[{Hanushevsky(2015)}]{bbcp}
 Hanushevsky, A.: bbcp,
-  \urlprefix\url{https://www.slac.stanford.edu/{~}abh/bbcp/}, 2020.
+  \urlprefix\url{https://www.slac.stanford.edu/~abh/bbcp/}, last access: 4 June
+  2020, 2015.
 
 \bibitem[{IEEE(2009)}]{IEEE1541}
 IEEE: {IEEE Standard for Prefixes for Binary Multiples}, IEEE Std 1541-2002
@@ -79,18 +92,7 @@ IEEE: {IEEE Standard for Prefixes for Binary Multiples}, IEEE Std 1541-2002
 Juckes, M., Taylor, K.~E., Durack, P.~J., Lawrence, B., Mizielinski, M.~S.,
   Pamment, A., Peterschmitt, J.-Y., Rixen, M., and S{\'{e}}n{\'{e}}si, S.: {The
   CMIP6 Data Request (DREQ, version 01.00.31)}, Geoscientific Model
-  Development, 13, 201--224, \doi{10.5194/gmd-13-201-2020},
-  \urlprefix\url{https://www.geosci-model-dev.net/13/201/2020/}, 2020.
-
-\bibitem[{{Karl E. Taylor, Martin Juckes, V. Balaji, Luca Cinquini,
-  S{\'{e}}bastien Denvil, Paul J. Durack, Mark Elkington, Eric Guilyardi, Slava
-  Kharin, Michael Lautenschlager, Bryan Lawrence, Denis Nadeau} and
-  Stockhause(2018)}]{GloablAttr}
-{Karl E. Taylor, Martin Juckes, V. Balaji, Luca Cinquini, S{\'{e}}bastien
-  Denvil, Paul J. Durack, Mark Elkington, Eric Guilyardi, Slava Kharin, Michael
-  Lautenschlager, Bryan Lawrence, Denis Nadeau} and Stockhause, M.: {CMIP6
-  Global Attributes, DRS, Filenames, Directory Structure, and CV's},
-  \urlprefix\url{http://goo.gl/v1drZl}, 2018.
+  Development, 13, 201--224, \doi{10.5194/gmd-13-201-2020}, 2020.
 
 \bibitem[{Lawrence et~al.(2013)Lawrence, Bennett, Churchill, Juckes, Kershaw,
   Pascoe, Pepler, Pritchard, and Stephens}]{lawrence2013storing}
@@ -98,8 +100,7 @@ Lawrence, B.~N., Bennett, V.~L., Churchill, J., Juckes, M., Kershaw, P.,
   Pascoe, S., Pepler, S., Pritchard, M., and Stephens, A.: {Storing and
   manipulating environmental big data with JASMIN}, in: 2013 IEEE International
   Conference on Big Data, pp. 68--75, IEEE, IEEE,
-  \doi{10.1109/BigData.2013.6691556},
-  \urlprefix\url{http://ieeexplore.ieee.org/document/6691556/}, 2013.
+  \doi{10.1109/BigData.2013.6691556}, 2013.
 
 \bibitem[{Mizielinski et~al.(2016)Mizielinski, Stephens, van~der Linden,
   Bretonniere, Fiore, von Hardenberg, Kolax, Lohmann, Moine, {Le Sager},
@@ -107,15 +108,13 @@ Lawrence, B.~N., Bennett, V.~L., Churchill, J., Juckes, M., Kershaw, P.,
 Mizielinski, M.~S., Stephens, A., van~der Linden, P., Bretonniere, P.~A.,
   Fiore, S., von Hardenberg, J., Kolax, M., Lohmann, K., Moine, M.-P., {Le
   Sager}, P., Semmler, T., and Senan, R.: {PRIMAVERA Deliverable D9.1 Data
-  Management Plan}, \doi{10.5281/ZENODO.3598390},
-  \urlprefix\url{https://zenodo.org/record/3598390}, 2016.
+  Management Plan}, \doi{10.5281/ZENODO.3598390}, 2016.
 
 \bibitem[{Nadeau et~al.(2018)Nadeau, Seddon, Vegas-Regidor, Kettleborough, and
   Hogan}]{Nadeau2018}
 Nadeau, D., Seddon, J., Vegas-Regidor, J., Kettleborough, J., and Hogan, E.:
   {PRIMAVERA-H2020/cmip6-cmor-tables: Version 01.00.23},
-  \doi{10.5281/ZENODO.1245672},
-  \urlprefix\url{https://doi.org/10.5281/zenodo.1245672}, 2018.
+  \doi{10.5281/ZENODO.1245672}, 2018.
 
 \bibitem[{Nadeau et~al.(2019)Nadeau, Doutriaux, Mauzey1, Hogan, Kettleborough,
   Kjoti, TobiasWeigel, Durack, Nicholls, Jmrgonza, Wachsylon, Taylor13, Seddon,
@@ -123,7 +122,7 @@ Nadeau, D., Seddon, J., Vegas-Regidor, J., Kettleborough, J., and Hogan, E.:
 Nadeau, D., Doutriaux, C., Mauzey1, Hogan, E., Kettleborough, J., Kjoti,
   TobiasWeigel, Durack, P.~J., Nicholls, Z., Jmrgonza, Wachsylon, Taylor13,
   Seddon, J., and Betts, E.: {PCMDI/cmor: 3.5.0}, \doi{10.5281/ZENODO.3355583},
-  \urlprefix\url{https://zenodo.org/record/3355583}, 2019.
+  2019.
 
 \bibitem[{Nurser et~al.(2020)Nurser, Grant, Belcher, Bell, Blaker, Megann, and
   Guivarch}]{Nurser2020}
@@ -134,13 +133,12 @@ Nurser, A.~G., Grant, A.~L., Belcher, S.~E., Bell, M., Blaker, A.~T., Megann,
 
 \bibitem[{Pangeo(2020)}]{Pangeo}
 Pangeo: {Pangeo project web page}, \urlprefix\url{https://pangeo.io/}, last
-  access: 2 June, 2020.
+  access: 2 June 2020, 2020.
 
 \bibitem[{PRIMAVERA(2015)}]{GrantAgree}
-PRIMAVERA: {Grant Agreement number: 641727 PRocess-based climate sIMulation:
+PRIMAVERA: {Grant Agreement number: 641727 - PRocess-based climate sIMulation:
   AdVances in high resolution modelling and European climate Risk Assessment
-  (PRIMAVERA)}, \doi{10.5281/ZENODO.3874429},
-  \urlprefix\url{https://zenodo.org/record/3874429}, 2015.
+  (PRIMAVERA)}, \doi{10.5281/ZENODO.3874429}, 2015.
 
 \bibitem[{Roberts et~al.(2020)Roberts, Camp, Seddon, Vidale, Hodges, Vanniere,
   Mecking, Haarsma, Bellucci, Scoccimarro, Caron, Chauvin, Terray, Valcke,
@@ -151,9 +149,7 @@ Roberts, M.~J., Camp, J., Seddon, J., Vidale, P.~L., Hodges, K., Vanniere, B.,
   C., Senan, R., Zarzycki, C., and Ullrich, P.: {Impact of model resolution on
   tropical cyclone simulation using the HighResMIP-PRIMAVERA multimodel
   ensemble}, Journal of Climate, 33, 2557--2583,
-  \doi{10.1175/JCLI-D-19-0639.1},
-  \urlprefix\url{http://journals.ametsoc.org/doi/10.1175/JCLI-D-19-0639.1},
-  2020.
+  \doi{10.1175/JCLI-D-19-0639.1}, 2020.
 
 \bibitem[{Schiemann et~al.(2020)Schiemann, Athanasiadis, Barriopedro,
   Doblas-Reyes, Lohmann, Roberts, Sein, Roberts, Terray, and
@@ -162,18 +158,15 @@ Schiemann, R., Athanasiadis, P., Barriopedro, D., Doblas-Reyes, F., Lohmann,
   K., Roberts, M.~J., Sein, D., Roberts, C.~D., Terray, L., and Vidale, P.~L.:
   {The representation of Northern Hemisphere blocking in current global climate
   models}, Weather and Climate Dynamics Discussions, 2020, 1--21,
-  \doi{10.5194/wcd-2019-19},
-  \urlprefix\url{http://www.weather-clim-dynam-discuss.net/wcd-2019-19/}, 2020.
+  \doi{10.5194/wcd-2019-19}, 2020.
 
 \bibitem[{Seddon(2020)}]{Seddon2020}
 Seddon, J.: {PRIMAVERA-H2020/primavera-val: Initial release},
-  \doi{10.5281/ZENODO.3596772},
-  \urlprefix\url{https://zenodo.org/record/3596772}, 2020.
+  \doi{10.5281/ZENODO.3596772}, 2020.
 
 \bibitem[{Seddon and Stephens(2020)}]{Seddon2019}
 Seddon, J. and Stephens, A.: {PRIMAVERA-H2020/primavera-dmt: Updated
-  REAMDE.md}, \doi{10.5281/zenodo.3596017},
-  \urlprefix\url{https://zenodo.org/record/3596017}, 2020.
+  REAMDE.md}, \doi{10.5281/zenodo.3596017}, 2020.
 
 \bibitem[{Senior(2019)}]{Senior2019}
 Senior, C.~A.: {P25-Present: Present-day 25km regional pan-Africa data},
@@ -190,5 +183,13 @@ Stratton, R.~A., Senior, C.~A., Vosper, S.~B., Folwell, S.~S., Boutle, I.~A.,
   Regional Climate Simulation with the Met Office Unified Model: CP4-Africa},
   Journal of Climate, 31, 3485--3508, \doi{10.1175/JCLI-D-17-0503.1},
   \urlprefix\url{https://doi.org/10.1175/JCLI-D-17-0503.1}, 2018.
+
+\bibitem[{Taylor et~al.(2018)Taylor, Juckes, Balaji, Cinquini, Denvil, Durack,
+  Elkington, Guilyardi, Kharin, Lautenschlager, Lawrence, Nadeau, and
+  Stockhause}]{GloablAttr}
+Taylor, K.~E., Juckes, M., Balaji, V., Cinquini, L., Denvil, S., Durack, P.~J.,
+  Elkington, M., Guilyardi, E., Kharin, S., Lautenschlager, M., Lawrence, B.,
+  Nadeau, D., and Stockhause, M.: {CMIP6 Global Attributes, DRS, Filenames,
+  Directory Structure, and CV's}, \urlprefix\url{http://goo.gl/v1drZl}, 2018.
 
 \end{thebibliography}
