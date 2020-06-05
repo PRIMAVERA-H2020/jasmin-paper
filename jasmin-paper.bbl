@@ -42,7 +42,7 @@ Cinquini, L., Crichton, D., Mattmann, C., Harney, J., Shipman, G., Wang, F.,
   Gonzalez, E., Fiore, S., and Schweitzer, R.: {The Earth System Grid
   Federation: An open infrastructure for access to distributed geospatial
   data}, Future Generation Computer Systems, 36, 400--417,
-  \doi{https://doi.org/10.1016/j.future.2013.07.002}, 2014.
+  \doi{10.1016/j.future.2013.07.002}, 2014.
 
 \bibitem[{Django(2019)}]{Django}
 Django: {Django}, \urlprefix\url{https://djangoproject.com/}, last access: 12
