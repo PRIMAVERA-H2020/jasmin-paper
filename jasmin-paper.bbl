@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -44,9 +44,17 @@ Cinquini, L., Crichton, D., Mattmann, C., Harney, J., Shipman, G., Wang, F.,
   data}, Future Generation Computer Systems, 36, 400--417,
   \doi{10.1016/j.future.2013.07.002}, 2014.
 
+\bibitem[{CMCC()}]{CMCC}
+CMCC: {ECASLab}, \urlprefix\url{https://ophidialab.cmcc.it/}, last access: 4
+  February 2021.
+
 \bibitem[{Django(2019)}]{Django}
 Django: {Django}, \urlprefix\url{https://djangoproject.com/}, last access: 12
   February 2020, 2019.
+
+\bibitem[{DKRZ(2021)}]{dkrz}
+DKRZ: {Deutsches Klimarechenzentrum}, \urlprefix\url{https://www.dkrz.de/},
+  last access: 4 February 2021, 2021.
 
 \bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer,
   and Taylor}]{Eyring2016}
@@ -101,6 +109,11 @@ Lawrence, B.~N., Bennett, V.~L., Churchill, J., Juckes, M., Kershaw, P.,
   manipulating environmental big data with JASMIN}, in: 2013 IEEE International
   Conference on Big Data, pp. 68--75, IEEE, IEEE,
   \doi{10.1109/BigData.2013.6691556}, 2013.
+
+\bibitem[{LBNL(2021)}]{cori}
+LBNL: {Lawrence Berkeley National Laboratory Cori supercomputer},
+  \urlprefix\url{https://www.nersc.gov/systems/cori/}, last access: 5 February
+  2021, 2021.
 
 \bibitem[{Mizielinski et~al.(2016)Mizielinski, Stephens, van~der Linden,
   Bretonniere, Fiore, von Hardenberg, Kolax, Lohmann, Moine, {Le Sager},
@@ -168,6 +181,15 @@ Seddon, J.: {PRIMAVERA-H2020/primavera-val: Initial release},
 Seddon, J. and Stephens, A.: {PRIMAVERA-H2020/primavera-dmt: Updated
   REAMDE.md}, \doi{10.5281/zenodo.3596017}, 2020.
 
+\bibitem[{Seddon et~al.(2020)Seddon, Mizielinski, Roberts, Stephens, Hegewald,
+  Semmler, Bretonni{\`{e}}re, Caron, D'Anca, Fiore, Moine, Roberts, Senan, and
+  Fladrich}]{Seddon2020c}
+Seddon, J., Mizielinski, M.~S., Roberts, M., Stephens, A., Hegewald, J.,
+  Semmler, T., Bretonni{\`{e}}re, P.-A., Caron, L.-P., D'Anca, A., Fiore, S.,
+  Moine, M.-P., Roberts, C., Senan, R., and Fladrich, U.: {Deliverable D9.6
+  Review of DMP and lessons learnt for future projects},
+  \doi{10.5281/ZENODO.3961932}, 2020.
+
 \bibitem[{Senior(2019)}]{Senior2019}
 Senior, C.~A.: {P25-Present: Present-day 25km regional pan-Africa data},
   \urlprefix\url{https://catalogue.ceda.ac.uk/uuid/4e362effa16146abbe45c2c58f1e54ed},
@@ -181,8 +203,7 @@ Stratton, R.~A., Senior, C.~A., Vosper, S.~B., Folwell, S.~S., Boutle, I.~A.,
   Morcrette, C.~J., Short, C., Stirling, A.~J., Taylor, C.~M., Tucker, S.,
   Webster, S., and Wilkinson, J.~M.: {A Pan-African Convection-Permitting
   Regional Climate Simulation with the Met Office Unified Model: CP4-Africa},
-  Journal of Climate, 31, 3485--3508, \doi{10.1175/JCLI-D-17-0503.1},
-  \urlprefix\url{https://doi.org/10.1175/JCLI-D-17-0503.1}, 2018.
+  Journal of Climate, 31, 3485--3508, \doi{10.1175/JCLI-D-17-0503.1}, 2018.
 
 \bibitem[{Taylor et~al.(2018)Taylor, Juckes, Balaji, Cinquini, Denvil, Durack,
   Elkington, Guilyardi, Kharin, Lautenschlager, Lawrence, Nadeau, and
