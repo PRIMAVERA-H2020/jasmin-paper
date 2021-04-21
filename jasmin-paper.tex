@@ -27,7 +27,7 @@
 
 \begin{document}
 
-\title{PRIMAVERA multi climate model analysis at the JASMIN Super Data Cluster}
+\title{The analysis of large-volume multi-institute climate model output at a Central Analysis Facility}
 
 
 % \Author[affil]{given_name}{surname}
@@ -67,28 +67,28 @@
 
 
 \begin{abstract}
-The PRIMAVERA project aims to develop a new generation of advanced and well-evaluated high-resolution global climate models. As part of PRIMAVERA, seven different climate models have been run in both standard and higher resolution configurations, with common initial conditions and forcings to form a multi-model ensemble. The ensemble simulations were run on high performance computers across Europe and generated approximately 1.6~pebibytes of output. To allow the data from all models to be analysed at this scale, PRIMAVERA scientists were encouraged to bring their analysis to the data. All data was transferred to the JASMIN super-data-cluster, where it was catalogued and details made available to users using the PRIMAVERA Data Management Tool's (DMT's) web interface. Users from across the project were able to query the available data using the DMT and then access it via JASMIN. Here we describe how the PRIMAVERA project used JASMIN's facilities to enable users to analyse this multi-model data set. We believe that PRIMAVERA's experience using JASMIN demonstrates how similar, multi institute, big-data projects can efficiently share, organise and analyse large volumes of data.
+The PRIMAVERA project aims to develop a new generation of advanced and well-evaluated high-resolution global climate models. As part of PRIMAVERA, seven different climate models have been run in both standard and higher resolution configurations, with common initial conditions and forcings to form a multi-model ensemble. The ensemble simulations were run on high performance computers across Europe and generated approximately 1.6~pebibytes of output. To allow the data from all models to be analysed at this scale, PRIMAVERA scientists were encouraged to bring their analysis to the data. All data was transferred to a Central Analysis Facility (CAF), in this case the JASMIN super-data-cluster, where it was catalogued and details made available to users using the PRIMAVERA Data Management Tool's (DMT's) web interface. Users from across the project were able to query the available data using the DMT and then access it at the CAF. Here we describe how the PRIMAVERA project used the CAF's facilities to enable users to analyse this multi-model data set. We believe that PRIMAVERA's experience using a CAF demonstrates how similar, multi institute, big-data projects can efficiently share, organise and analyse large volumes of data.
 \end{abstract}
 
 
 \copyrightstatement{The works published in this journal are distributed under the Creative Commons Attribution 4.0 License. This licence does not affect the Crown copyright work, which is re-usable under the Open Government Licence (OGL). The Creative Commons Attribution 4.0 License and the OGL are interoperable and do not conflict with, reduce or limit each other.
 
-\noindent\textcopyright~Crown copyright 2020}
+\noindent\textcopyright~Crown copyright 2021}
 
 
 \introduction  %% \introduction[modified heading if necessary]
 
 The PRIMAVERA project aims to develop a new generation of advanced and well-evaluated high-resolution global climate models. Two ``streams'' of simulations were performed within PRIMAVERA, each consisting of seven different climate models (AWI-CM-1-1, CMCC-CM2, CNRM-CM6-1, EC-Earth3P, ECMWF-IFS, HadGEM3-GC31 and MPI-ESM1-2) that were run at their standard nominal resolution~\citep{GloablAttr} (typically  250~km in the atmosphere and 100~km in the ocean) and at a higher resolution (25~km atmosphere and 8-25~km ocean). All models were run with common initial conditions and forcings according to the HighResMIP protocol~\citep{Haarsma2016}. The simulations were run on high performance computers (HPCs) across Europe and the scientists who analysed the data were based at 20 different institutes across Europe with assistance from other global scientists. Perhaps the most challenging aspect of working with global, high-resolution simulations is the volume of data produced. High-resolution simulations have been shown to better represent many different aspects of the climate, such as tropical cyclones~\citep{Roberts2020} and atmospheric blocking~\citep{Schiemann2019}. The PRIMAVERA simulations have generated a total of 1.6~pebibytes (PiB) of data\footnote{Data volumes and rates in this paper use binary prefixes and so 1~PiB is $1024^5$~bytes~\citep{IEEE1541}.}.
 
-A Data Management Plan (DMP) was developed to allow this data to be stored, analysed and archived at the JASMIN super-data-cluster. The Data Management Tool (DMT) software was written to implement the DMP and provides the ability to catalogue and then search the project's data. The DMT tracks and controls the movement of individual files as they are moved between tape and disk, and allows the data to be published to the global community for sharing at the end of the project.
+A Data Management Plan (DMP) was developed to allow this data to be stored, analysed and archived at a Central Analysis Facility (CAF), which in PRIMAVERA's case was the JASMIN super-data-cluster. The Data Management Tool (DMT) software was written to implement the DMP and provides the ability to catalogue and then search the project's data. The DMT tracks and controls the movement of individual files as they are moved between tape and disk, and allows the data to be published to the global community for sharing at the end of the project.
 
-If JASMIN had not been available for PRIMAVERA to use then it would have been necessary for each modelling centre to make their data available, typically on an Earth System Grid Federation (ESGF)~\citep{ESGFCinquini} node or local FTP server. Anyone wanting to analyse data would have needed to identify which variables were available and then download them from each modelling centre to their home institute. There would have been multiple copies of common datasets and each institute would have required significant volumes of storage, transfer bandwidth and compute resources.
+If a CAF had not been available for PRIMAVERA to use then it would have been necessary for each modelling centre to make their own data available, typically on an Earth System Grid Federation (ESGF)~\citep{ESGFCinquini} node or local File Transfer Protocol (FTP) server. Anyone wanting to analyse data would have needed to identify which variables were available and then download them from each modelling centre to their home institute. There would have been multiple copies of common datasets and each institute would have required significant volumes of storage, transfer bandwidth and compute resources.
 
-In this paper we introduce JASMIN and the PRIMAVERA project. We then describe the DMP and DMT and explain how they allowed the project's data to be managed. Finally, we provide a summary of how the data was transferred to JASMIN and describe some of the hardware and software opportunities that may be suitable for managing similar projects in the future.
+In this paper we introduce the CAF and the PRIMAVERA project. We then describe the DMP and DMT and explain how they allowed the project's data to be managed. Finally, we provide a summary of how the data was transferred to the CAF and describe some of the hardware and software opportunities that may be suitable for managing similar projects in the future.
 
-\section{JASMIN}
+\section{Central Analysis Facility}
 
-JASMIN is a super-data-cluster that was installed in 2012 \citep{lawrence2013storing}. It is funded by the Natural Environment Research Council (NERC) and the United Kingdom (UK) Space Agency, and operated by the Science and Technology Facilities Council (STFC). It is located at the STFC Rutherford Appleton Lab (RAL), Harwell, UK. JASMIN's Phase 4 update in September 2018 added 38.5~PiB of new storage co-located with the existing 4000 cores of compute. The storage and compute are tied together with a low latency network. RAL has a fast connection to Janet, the UK's academic network, which in turn is connected to the G\'{E}ANT European network, allowing the fast transfer of data from the HPCs used to run the PRIMAVERA simulations to JASMIN. In addition, JASMIN is connected to an on-site tape library for the offline storage of data.
+The CAF used in the PRIMAVERA project is JASMIN, a super-data-cluster that was installed in 2012 \citep{lawrence2013storing}. It is funded by the Natural Environment Research Council (NERC) and the United Kingdom (UK) Space Agency, and operated by the Science and Technology Facilities Council (STFC). It is located at the STFC Rutherford Appleton Lab (RAL), Harwell, UK. JASMIN's Phase 4 update in September 2018 added 38.5~PiB of new storage co-located with the existing 4000 cores of compute. The storage and compute are tied together with a low latency network. RAL has a fast connection to Janet, the UK's academic network, which in turn is connected to the G\'{E}ANT European network, allowing the fast transfer of data from the HPCs used to run the PRIMAVERA simulations to JASMIN. In addition, JASMIN is connected to an on-site tape library for the offline storage of data. Similar CAFs exist at Centro Euro-Mediterraneo sui Cambiamenti Climatici (CMCC)~\citep{CMCC}, Deutsches Klimarechenzentrum (DKRZ, German Climate Computing Centre)~\citep{dkrz} and at Lawrence Berkeley National Laboratory on the Cori supercomputer~\citep{cori}.
 
 The compute at JASMIN is split into interactive data analysis servers, the LOTUS batch processing system and some additional private cloud servers. Part of the storage is dedicated for the Centre for Environmental Data Analysis (CEDA) archive, which contains over 13~PiB of atmospheric and earth observations data. The archive is connected to the UK's ESGF node. The co-location of the storage, datasets in the archive and compute makes JASMIN a powerful facility to analyse climate simulations at.
 
@@ -98,7 +98,7 @@ All compute hosts at JASMIN run the Linux operating system and have a suite of m
 
 PRIMAVERA consists of eleven work packages (WPs)~\citep{GrantAgree} covering a range of scientific, technical, management, communication and user engagement topics. The Stream 1 and 2 simulations described here are run and managed by two of the work packages. Several of the other WPs analyse these simulations and compare them with existing simulations, observations and reanalyses. The remaining WPs carry out model development work or run small simulations that do not need to be shared with other WPs. These WPs only require a small volume of storage on one of the GWS.
 
-The Stream 1 and 2 simulations follow the HighResMIP protocol and have been submitted to the 6th phase of the Coupled Model Intercomparison Project (CMIP6) \citep{Eyring2016}. The Stream 1 simulations consist of a single ensemble member from each model at a standard and a high resolution for six different experiments. The follow-on Stream 2 simulations contain additional ensemble members for the experiments performed in Stream 1, but with a reduced data output to minimise the volume of data generated plus some additional simulations to exploit the new physics modules (for example~\cite{Nurser2020}) that have been developed in PRIMAVERA.
+The Stream 1 and 2 simulations follow the HighResMIP protocol and have been submitted to the 6th phase of the Coupled Model Intercomparison Project (CMIP6) \citep{Eyring2016}. The Stream 1 simulations consist of a single ensemble member from each model at a standard and a high resolution for six different experiments. The follow-on Stream 2 simulations contain additional ensemble members for the experiments performed in Stream 1, but with a reduced data output to minimise the volume of data generated plus some additional simulations to exploit the new physics modules (for example~\citep{Nurser2020}) that have been developed in PRIMAVERA.
 
 Due to the scientific complexity, data volumes and geographical distribution of the project participants, it was recognized that developing and implementing a data management plan would require a significant amount of time and effort. Sufficient resource was included in the project proposal to allow for this development work.
 
@@ -111,20 +111,20 @@ Due to the scientific complexity, data volumes and geographical distribution of 
 \label{dmp_workflow}
 \end{figure*}
 
-The PRIMAVERA Data Management Plan~\citep{Mizielinski2016} can be summarised as ``taking the analysis to the data''. Figure~\ref{dmp_workflow} shows the workflow developed in the DMP. All data files from the PRIMAVERA simulations were uploaded to JASMIN, where they were made accessible to project members, who were then able to undertake their analysis of them. It has been common practise in previous projects for users to download the data that they require to computing facilities at their home institute. With the volume of data being produced by PRIMAVERA, data transfer rates make downloading local copies of the data too slow and error prone. As such, facilities such as JASMIN that provide analysis facilities and tools are key to the exploitation of big data projects such as PRIMAVERA and CMIP6.
+The PRIMAVERA Data Management Plan~\citep{Mizielinski2016} can be summarised as ``taking the analysis to the data''. Figure~\ref{dmp_workflow} shows the workflow developed in the DMP. All data files from the PRIMAVERA simulations were uploaded to the CAF, where they were made accessible to project members, who were then able to undertake their analysis of them. It has been common practise in previous projects for users to download the data that they require to computing facilities at their home institute. With the volume of data being produced by PRIMAVERA, data transfer rates make downloading local copies of the data too slow and error prone. As such, central analysis facilities such as JASMIN that provide data storage and compute are key to the exploitation of big data projects such as PRIMAVERA and CMIP6.
 
 The first step in the DMP workflow is the generation of data by the modelling centres; simulations are run on a variety of HPCs across Europe and each model typically has its own proprietary output file format. As it was important to submit the PRIMAVERA data to HighResMIP, it was necessary to use the CMIP6 data standards~\citep{gmd-11-3659-2018}. These standards require data to be provided in CMOR3 (Climate Model Output Rewriter)~\citep{Nadeau2019} compliant netCDF files following the CMIP6 conventions. Where files had been output by the climate models in a proprietary format they were post-processed to comply with these standards.
 
-The second step in the workflow is the transfer of the data from the HPCs or post-processing systems to JASMIN. A discussion on the transfer techniques used and the rates achieved is given in Sect.~\ref{transfer_rates}. The data is uploaded to one of the PRIMAVERA GWSs at JASMIN.
+The second step in the workflow is the transfer of the data from the HPCs or post-processing systems to the CAF. A discussion on the transfer techniques used and the rates achieved is given in Sect.~\ref{transfer_rates}. The data is uploaded to the PRIMAVERA storage volume at the CAF.
 
 Step 3 in the workflow is the validation of the data, which includes checking that the data and metadata standards have been complied with, and the extraction of metadata to store in the DMT's database~\citep{Seddon2020}. Once the validation is complete the files are written to tape and removed from the GWS to create space for other uploads. After the upload and validation of the data, users analyse and work with it in Step 4. 
 
 The final steps in the workflow (steps 5 and 6 in Fig.~\ref{dmp_workflow}) are managed by CEDA rather than the PRIMAVERA project as these relate to the use of shared facilities. Uploaded data is ingested into the CEDA archives~\citep{CEDAArchive} and is then available for dissemination to the global community using the CEDA Earth System Grid Federation node~\citep{CEDAESGF}.
 
 
-\subsection{JASMIN Resources}
+\subsection{CAF Resources}
 
-After reviewing the DMP, PRIMAVERA was allocated 440~TiB of storage at JASMIN split across  five group workspaces. A server in the JASMIN internal cloud was allocated, which was given a domain name and  HTTPS access allowed to it from the Internet, and the DMT software and database were installed on this server.
+After reviewing the DMP, PRIMAVERA was allocated 440~TiB of storage at the CAF split across five volumes. A virtual machine in the internal cloud was provided, which was given a domain name and HTTPS access allowed to it from the Internet, and the DMT software and database were installed on this server.
 
 It was originally estimated that around 2.4~PiB of data would be generated by the project, and therefore only a subset of data could be held on disk at once. The remaining data would have to be held on tape and moved to the GWS as required. The DMP describes how the DMT would allow data to be efficiently and reliably moved between tape and GWS and its location tracked.
 
@@ -132,15 +132,15 @@ It was originally estimated that around 2.4~PiB of data would be generated by th
 
 \begin{figure}[t]
 	\includegraphics[width=8.3cm]{fig02.pdf}
-	\caption{The workflow used by users working with the PRIMAVERA data at JASMIN.}
+	\caption{The workflow used by users working with the PRIMAVERA data at the CAF.}
 	\label{analysis_workflow}
 \end{figure}
 
-Figure~\ref{analysis_workflow} shows the workflow that users working with the PRIMAVERA data at JASMIN were required to follow. Users begin by using the DMT's web interface to identify what data has been uploaded. If the data they require is not available on disk then they use the DMT's web interface to request that a subset of their data is restored from tape to disk. The DMT sends them an email when this requested sample dataset is available on disk and they can then work on JASMIN's interactive servers to develop and test their analysis code. After testing and validating their analysis code, they can then use the DMT to request that all of the data they require is restored from tape to disk. Once the full dataset is available on the GWS then the analysis is run on the LOTUS batch processing cluster. When their analysis is complete, users then mark the data as finished in the DMT's web interface and the DMT will then delete the data from disk to create space for other data.
+Figure~\ref{analysis_workflow} shows the workflow that users working with the PRIMAVERA data at the CAF were required to follow. Users begin by using the DMT's web interface to identify what data has been uploaded. If the data they require is not available on disk then they use the DMT's web interface to request that a subset of their data is restored from tape to disk. The DMT sends them an email when this requested sample dataset is available on disk and they can then work on the CAF's interactive servers to develop and test their analysis code. After testing and validating their analysis code, they can then use the DMT to request that all of the data they require is restored from tape to disk. Once the full dataset is available on the GWS then the analysis is run on the LOTUS batch processing cluster. When their analysis is complete, users then mark the data as finished in the DMT's web interface and the DMT will then delete the data from disk to create space for other data. This workflow allows for the efficient use of disk space; PRIMAVERA generated over 1.6~PiB of data but the upload of data, analysis and some storage of additional observations and reanalyses were able to fit into 440~TiB of allocated disk space.
 
 \section{Data Management Tool}
 
-The DMT was developed to track and control the flow of PRIMAVERA data around JASMIN and to allow users to query the available data and its location. It consists of a PostgreSQL database and custom software written in the Python programming language, using the Django web framework~\citep{Django}. The database is installed on a dedicated server, along with web server software and the DMT application, and is accessible to users across the JASMIN platform. Access to the database from LOTUS allows the validation of uploaded data to be submitted to the batch processing cluster, permitting large uploads to be processed in parallel.
+The DMT was developed to track and control the flow of PRIMAVERA data around the CAF and to allow users to query the available data and its location. It consists of a PostgreSQL database and custom software written in the Python programming language, using the Django web framework~\citep{Django}. The database is installed on a dedicated server, along with web server software and the DMT application, and is accessible to users across all hosts at the CAF. Access to the database from the compute cluster allows the validation of uploaded data to be submitted to the batch processing cluster, permitting large uploads to be processed in parallel.
 
 \begin{figure}[t]
 	\includegraphics[width=12cm]{fig03.png}
@@ -160,47 +160,95 @@ The DMT software~\citep{Seddon2019} is distributed under an open source license.
 	\label{dmt_struture}
 \end{figure}
 
-
 Figure~\ref{dmt_struture} shows a simplified UML class diagram showing how data is represented as Django models, which are implemented as Python classes in the DMT. Internally, the DMT's primary data object is a DataRequest. A DataRequest object consists of a VariableRequest object along with details of the institute, climate model, experiment and variant label. The VariableRequest object specifies a CMIP6 variable and MIP table along with additional metadata. VariableRequest objects are created programmatically from the CMIP6 HighResMIP data request~\citep{Juckes2020}. During the development of the data management plan, a shared spreadsheet was created from the HighResMIP data request and each institute edited the spreadsheet to indicate the variables that they would generate. The DataRequest objects were created programmatically from this spreadsheet. A facility to allow institutes to update the data requests that they would provide during the project was developed.
 
-A DataFile object is created for each file uploaded to JASMIN during the validation process. A checksum is calculated for each file submitted to the DMT. The checksums are used throughout the workflow as files are moved from tape to disk to ensure their integrity. Each DataFile is related to a DataRequest. All views in the DMT's web interface are generated from these DataRequest objects. All objects are mapped to database tables using the Django object-relational mapper. 
+A DataFile object is created for each file uploaded to the CAF during the validation process. A checksum is calculated for each file submitted to the DMT. The checksums are used throughout the workflow as files are moved from tape to disk to ensure their integrity. Each DataFile is related to a DataRequest. All views in the DMT's web interface are generated from these DataRequest objects. All objects are mapped to database tables using the Django object-relational mapper. 
+
+The DMT worked well, although some effort was required to maintain the set of expected data requests. Programmatically creating data requests  when each file is validated and added to the DMT would have been more efficient.
 
 \section{Data Transfer}
 \label{transfer_rates}
 
-Table~\ref{rates_achieved} shows the sustained rates achieved when transferring data from the data providers to JASMIN in mebibytes per second (MiB~s$^{-1}$). JASMIN contains several servers in a data transfer zone, whose connection to the Internet and to JASMIN has been designed for maximum data throughput. At the start of the project it had been assumed that parallel transfer protocols such as BBCP~\citep{bbcp} or GridFTP~\citep{Foster}\citep{Globus} would provide the best transfer rates and data providers were encouraged to use these. In reality, most data providers used the techniques that they were most familiar with as long as they gave sufficiently fast transfer rates. The rates achieved depend on many factors including the file system at either end, the load on the server and network at either end, and the network between the servers. The best transfer rate from a site was over 200~MiB~s$^{-1}$, which is 16.5 TiB per day. Typical rates were 30~MiB~s$^{-1}$ (2.5 TiB per day). These rates were sufficient to complete the project on time. It is hoped that with further optimisation work a minimum transfer rate of 5.0~TiB per day could be achieved.
+\begin{table}[t]
+	\caption{The rates achieved while transferring data from the data providers to the CAF.}
+	\begin{tabular}{lll}
+		\tophline
+		Transfer from & Rate achieved & Protocol used \\
+		\middlehline
+		Toulouse, France & 13~MiB~s$^{-1}$ & 4 BBCP jobs in parallel, with 4 streams each \\
+		Hamburg, Germany & 20 to 55~MiB~s$^{-1}$ & globus-url-copy \\
+		Lecce, Italy & 34~MiB~s$^{-1}$ average, 69~MiB~s$^{-1}$ peak & gridftp, with 4 concurrent FTP connections 8 process in parallel \\
+		Bologna (Cineca), Italy & 200 to 300~MiB~s$^{-1}$ & 5 parallel \texttt{rsync -av -e "ssh -c arcfour"} \\
+		Barcelona, Spain & 13~MiB~s$^{-1}$ & rsync \\
+		Exeter, UK & 30~MiB~s$^{-1}$ & 5 \texttt{moo get} in parallel \\
+		Reading, UK & 85~MiB~s$^{-1}$ & 4 parallel \texttt{rsync -rvz --rsh="ssh -c arcfour"} \\
+		\bottomhline
+	\end{tabular}
+	\belowtable{} % Table Footnotes
+	\label{rates_achieved}
+\end{table}
 
-The collection of all of PRIMAVERA's data at JASMIN was only possible because of the magnitude of the transfer rates that were achieved. If JASMIN had not been available, then the project would have been constrained by the transfer rates that could be achieved between many different sites.
 
+Table~\ref{rates_achieved} shows the sustained rates achieved when transferring data from the data providers to the CAF in mebibytes per second (MiB~s$^{-1}$). JASMIN contains several servers in a data transfer zone, whose connection to the Internet and to the rest of the CAF has been designed for maximum data throughput. At the start of the project it had been assumed that parallel transfer protocols such as BBCP~\citep{bbcp} or GridFTP~\citep{Foster}\citep{Globus} would provide the best transfer rates and data providers were encouraged to use these. In reality, most data providers used the techniques that they were most familiar with as long as they gave sufficiently fast transfer rates. The rates achieved depend on many factors including the file system at either end, the load on the server and network at either end, and the network between the servers. The best transfer rate from a site was over 200~MiB~s$^{-1}$, which is 16.5 TiB per day. Typical rates were 30~MiB~s$^{-1}$ (2.5 TiB per day). These rates were sufficient to complete the project on time. It is hoped that with further optimisation work a minimum transfer rate of 5.0~TiB per day could be achieved.
+
+The collection of all of PRIMAVERA's data at the CAF was only possible because of the magnitude of the transfer rates that were achieved. If access to the CAF had not been available, then the project would have been constrained by the transfer rates that could be achieved between many different sites.
+
+\section{User Feedback}
+
+\begin{table}[t]
+	\caption{Number of responses for each score from the users of the PRIMAVERA facilities at the CAF.}
+	\begin{tabular}{|c|c|p{15mm}|p{15mm}|p{15mm}|p{15mm}|p{15mm}|}
+		\hline
+		\multicolumn{2}{|c|}{} & Querying the data request to see which variables were scheduled to be produced. & Use of the DMT to discover and query the PRIMAVERA data available at JASMIN. & Retrieving data from tape to group workspace / disk. & Accessing the data on the JASMIN group workspaces. & Analysing the data at JASMIN?\\
+		\hline
+		\parbox[t]{2mm}{\multirow{7}{*}{\rotatebox[origin=c]{90}{Score}}} & 1 & 0 & 1 & 1 & 1 & 1\\
+		& 2 & 1 & 1 & 0 & 1 & 0\\
+		& 3 & 0 & 0 & 0 & 2 & 1\\
+		& 4 & 0 & 0 & 1 & 0 & 2\\
+		& 5 & 3 & 1 & 1 & 0 & 0\\
+		& 6 & 7 & 11 & 10 & 7 & 8\\
+		& 7 & 4 & 7 & 6 & 10 & 4\\
+		\hline
+		\multicolumn{2}{|c|}{\# Responses} & 15 & 21 & 19 & 21 & 16\\
+		\hline
+		\multicolumn{2}{|c|}{Mean} & 5.8 & 5.9 & 5.9 & 5.8 & 5.5\\
+		\hline
+	\end{tabular}
+	\label{survey_responses}
+\end{table}
+
+A survey of all PRIMAVERA users of the CAF was conducted and responses were received from 24 users~\citep{Seddon2020c}. Users of the data were asked to rate five aspects of the process out of seven with 1 being very difficult and 7 being very easy and the results are shown in Table~\ref{survey_responses}. The response to all of the questions was midway between neutral and very easy to use. Four users did indicate that they had various levels of difficulty accessing the data and two users indicated some levels of difficulty analysing the data at the CAF; no additional feedback was provided explaining the difficulties that these users had encountered. The remaining 17 and 14 users respectively answered these two questions with neutral to very positive answers. These largely positive responses indicated that users had few problems performing their analyses at the CAF.
 
 \section{Future Opportunities}
 
 \subsection{Platforms}
 
-\subsubsection{JASMIN}
-JASMIN has been essential to the success of PRIMAVERA. JASMIN has a finite capacity and so may not be able to support all further projects that would benefit from having access to it. Facilities similar to JASMIN providing additional capacity would be incredibly useful for collaborative projects like PRIMAVERA as they would reduce the need for all institutes participating in a project to have their own large data storage and data analysis facilities. Such facilities also reduce the volume of data that needs to be transferred, which is important as climate simulations increase in resolution and complexity, and therefore increase in size.
+\subsubsection{Central Analysis Facility}
+Access to the CAF has been essential to the success of PRIMAVERA. JASMIN has a finite capacity and so may not be able to support all further projects that would benefit from having access to it. Central Analysis Facilities similar to JASMIN providing additional capacity would be incredibly useful for collaborative projects like PRIMAVERA as they would reduce the need for all institutes participating in a project to have their own large data storage and data analysis facilities. Such facilities also reduce the volume of data that needs to be transferred, which is important as climate simulations increase in resolution and complexity, and therefore increase in size.
 
-Access to JASMIN like facilities also allows scientists from developing countries who do not currently have access to high-performance data analysis facilities locally to analyse large data sets. For example, the CP4-Africa~\citep{Stratton2018} convection-permitting regional climate simulations over Africa are now available at JASMIN~\citep{Senior2019} and have been analysed at JASMIN by scientists working from Africa. Tools to access JASMIN-like facilities must be robust to the potentially slow and unreliable Internet connections that may be encountered in developing countries.
+Access to a CAF also allows scientists from developing countries who do not currently have access to high-performance data analysis facilities locally to analyse large data sets. For example, the CP4-Africa~\citep{Stratton2018} convection-permitting regional climate simulations over Africa are now available at JASMIN~\citep{Senior2019} and have been analysed at JASMIN by scientists working from Africa. Tools to access CAFs must be robust to the potentially slow and unreliable Internet connections that may be encountered in developing countries.
 
 
 \subsubsection{Public Cloud}
-Public cloud computing technologies could provide an alternative to a facility such as JASMIN. As users have been using local Unix based computers to analyse data for many years, the change from working locally to working remotely at JASMIN was therefore only a small change for users. The change was assisted by JASMIN's comprehensive documentation~\citep{JASMINdocs} and the development of additional documentation and demonstration videos by the PRIMAVERA project. JASMIN's mix of interactive servers and the batch processing cluster allowed for the easy development of analysis software and its running on the full multi-model datasets. Moving the analyses to the cloud would be a larger change for users, and significant development and support would be required. However, the use of public cloud technology would allow the compute to be easily scaled to the amount required at any one time, and potentially provide large volumes of data storage and remote access to the data for all users.
+Public cloud computing technologies could provide an alternative to a facility such as JASMIN. As users have been using local Unix based computers to analyse data for many years, the change from working locally to working remotely at JASMIN was therefore only a small change for users. The change was assisted by the CAF's comprehensive documentation~\citep{JASMINdocs} and the development of additional documentation and demonstration videos by the PRIMAVERA project. The CAF's mix of interactive servers and the batch processing cluster allowed for the easy development of analysis software and its running on the full multi-model datasets. Moving the analyses to the cloud would be a larger change for users, and significant development and support would be required. However, the use of public cloud technology would allow the compute to be easily scaled to the amount required at any one time, and potentially provide large volumes of data storage and remote access to the data for all users.
 
-STFC were PRIMAVERA project partners and received some funding for the provision of JASMIN. If a project decided to use the public cloud rather than an existing facility such as JASMIN then funding for the provision of the public cloud resources would need to be included in the project proposal. Compute in the public cloud is billed per second per processor core, storage is billed per unit of storage and there can be a charge for moving data into and out of the the storage. Determining the level of funding required for public cloud computing in a proposal will be difficult, but important to correctly determine so that the project does not overspend or run out of compute or storage before the end of the project. However, data sharing outside of the project could be made easier in a public cloud based solution as external users could fund their own processing costs, whereas in PRIMAVERA they had to be invited onto the JASMIN platform.
+STFC were PRIMAVERA project partners and received some funding for the provision of the CAF. If a project decided to use the public cloud rather than an existing facility such as JASMIN then funding for the provision of the public cloud resources would need to be included in the project proposal. Compute in the public cloud is billed per second per processor core, storage is billed per unit of storage and there can be a charge for moving data into and out of the the storage. Determining the level of funding required for public cloud computing in a proposal will be difficult, but important to correctly determine so that the project does not overspend or run out of compute or storage before the end of the project. However, data sharing outside of the project could be made easier in a public cloud based solution as external users could fund their own processing costs, whereas in PRIMAVERA they had to be invited onto the CAF.
 
-Significant design and development work is required before projects like PRIMAVERA can move their data storage and analysis to the public cloud.
+Significant architectural design and software development is required before projects like PRIMAVERA can move their data storage and analysis to the public cloud.
 
 \subsection{Software}
 
-The DMT software worked well for the PRIMAVERA project. The authors are not aware of other similar projects having such a tool. The current DMT implementation makes some assumptions about the layout of the storage allocated to PRIMAVERA at JASMIN and about the structure of the PRIMAVERA data. It will require refactoring before it can be used in other projects. The current version of the DMT has shown that such a tool is feasible and can improve the efficiency of data management, discovery and storage in such a project.
+The DMT software worked well for the PRIMAVERA project. The authors are not aware of other similar projects having such a tool. The current DMT implementation makes some assumptions about the layout of the storage allocated to PRIMAVERA at JASMIN and about the structure of the PRIMAVERA data. It will require refactoring before it can be used in other projects and at other CAFs. The current version of the DMT has shown that such a tool is feasible and can improve the efficiency of data management, discovery and storage in such a project.
 
-New software technologies such as Pangeo offer further benefits if a public cloud solution was used or if external access was available to multiple JASMIN-like facilities around the world~\citep{Pangeo}. Pangeo is a collection of software packages to enable Earth science research in cloud and HPC environments. It allows data to be distributed across different storage areas and schedules processing on the compute attached to each storage area. Pangeo could reduce the volume of data needing to be transferred in future projects. Model output data would be uploaded to a storage location close to the data provider. Just the metadata would be uploaded to a central (or distributed) catalogue. Tools such as Pangeo would then run users' analysis software on the compute where each dataset is stored and only the small volume of analysis results would need to to transferred back to the user.
+New software technologies such as Pangeo offer further benefits if a public cloud solution was used or if external access was available to multiple CAFs around the world~\citep{Pangeo}. Pangeo is a collection of software packages to enable Earth science research in cloud and HPC environments. It allows data to be distributed across different storage areas and schedules processing on the compute attached to each storage area. Pangeo could reduce the volume of data needing to be transferred in future projects. Model output data would be uploaded to a storage location close to the data provider. Just the metadata would be uploaded to a central (or distributed) catalogue. Tools such as Pangeo would then run users' analysis software on the compute where each dataset is stored and only the small volume of analysis results would need to to transferred back to the user.
 
 \conclusions  %% \conclusions[modified heading if necessary]
 
-PRIMAVERA's Data Management Plan and access to the JASMIN super-data-cluster have been essential to the success of the PRIMAVERA project. The DMP and JASMIN have allowed over 100 researchers to collaboratively analyse a multi-model high-resolution set of climate simulations. Over 1.6~PiB of data has been collected in a single location where users have been able to analyse the data via both interactive analysis servers and a batch processing cluster. The Data Management Tool has minimised the volume of expensive disk storage in use at any one time by allowing data to be seamlessly moved between tape and disk under the control of data users.
+PRIMAVERA's Data Management Tool and access to the Central Analysis Facility have been essential to the success of the PRIMAVERA project. The DMT and CAF have allowed over 100 researchers to collaboratively analyse a multi-model high-resolution set of climate simulations. Over 1.6~PiB of data has been collected in a single location where users have been able to analyse the data via both interactive analysis servers and a batch processing cluster. The Data Management Tool has minimised the volume of expensive disk storage in use at any one time by allowing data to be seamlessly moved between tape and disk under the control of data users.
 
-The use of facilities such as JASMIN and the PRIMAVERA DMT have laid down a marker for future projects and their adoption is recommended. The DMT has allowed the project to manage its storage resources to the best of its ability. Access to JASMIN has been essential for analysing data in the PRIMAVERA project but continued expansion of JASMIN is necessary to allow it to continue supporting such projects. In each CMIP era the data volume has increased by an order of magnitude~\citep{gmd-11-3659-2018}. The Earth sciences community would benefit from the development of additional JASMIN like facilities to allow even more projects to take advantage of such facilities and to handle the likely increase in data volumes.
+The use of the CAF and the DMT have laid down a marker for future projects and their adoption is recommended. The DMT has allowed the project to manage its storage resources to the best of its ability. The DMT's ability to allow users to move data between tape and disk minimised the use of expensive disk storage. A survey of users found that accessing and analysing data at the CAF was relatively easy.
+
+Access to the CAF has been essential for analysing data in the PRIMAVERA project but continued expansion of CAFs such as at JASMIN, CMCC and DKRZ is necessary to allow them to continue supporting such projects. In each CMIP era the data volume has increased by an order of magnitude~\citep{gmd-11-3659-2018}. The Earth sciences community would benefit from the development of additional CAFs to allow even more projects to take advantage of such facilities and to handle the inevitable increase in future data volumes.
 
 The tools developed by the PRIMAVERA project have successfully demonstrated the feasibility of such techniques. The tools have been made freely available, but require some development before they can be seamlessly adopted by other projects. The inclusion in the project proposal of dedicated time resource for data management and development of the DMT contributed to the success.
 
@@ -243,24 +291,6 @@ The tools developed by the PRIMAVERA project have successfully demonstrated the 
 
 \appendixtables   %% needs to be added in front of appendix tables
 
-\begin{table}[t]
-	\caption{The rates achieved while transferring data from the data providers to JASMIN.}
-	\begin{tabular}{lll}
-		\tophline
-		Transfer from & Rate achieved & Protocol used \\
-		\middlehline
-		Toulouse, France & 13~MiB~s$^{-1}$ & 4 BBCP jobs in parallel, with 4 streams each \\
-		Hamburg, Germany & 20 to 55~MiB~s$^{-1}$ & globus-url-copy \\
-		Lecce, Italy & 34~MiB~s$^{-1}$ average, 69~MiB~s$^{-1}$ peak & gridftp, with 4 concurrent FTP connections 8 process in parallel \\
-		Bologna (Cineca), Italy & 200 to 300~MiB~s$^{-1}$ & 5 parallel \texttt{rsync -av -e "ssh -c arcfour"} \\
-		Barcelona, Spain & 13~MiB~s$^{-1}$ & rsync \\
-		Exeter, UK & 30~MiB~s$^{-1}$ & 5 \texttt{moo get} in parallel \\
-		Reading, UK & 85~MiB~s$^{-1}$ & 4 parallel \texttt{rsync -rvz --rsh="ssh -c arcfour"} \\
-		\bottomhline
-	\end{tabular}
-	\belowtable{} % Table Footnotes
-	\label{rates_achieved}
-\end{table}
 
 
 %% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
@@ -274,7 +304,7 @@ The tools developed by the PRIMAVERA project have successfully demonstrated the 
 % \disclaimer{TEXT} %% optional section
 
 \begin{acknowledgements}
-The PRIMAVERA project is funded by the European Union's Horizon 2020 programme, Grant Agreement no. 641727. MM received additional funding from the EU Horizon 2020 CRESCENDO project, Grant Agreement no. 641816 and by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). This work used JASMIN, the UK's collaborative data analysis environment (http://jasmin.ac.uk). The authors would like to thank all of the STFC staff who design and maintain JASMIN, without whom this work would not have been possible. The data providers from the PRIMAVERA modelling centres should also be thanked for their hard work complying with the metadata standards and their enthusiasm to use the workflows developed in the project, along with all of PRIMAVERA's users.
+The PRIMAVERA project is funded by the European Union's Horizon 2020 programme, Grant Agreement no. 641727. MM received additional funding from the EU Horizon 2020 CRESCENDO project, Grant Agreement no. 641816 and by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). This work used JASMIN, the UK's collaborative data analysis environment (http://jasmin.ac.uk). The IS-ENES3 project has provided funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 824084 to support continued access for the PRIMAVERA project to JASMIN. The authors would like to thank all of the STFC staff who design and maintain JASMIN, without whom this work would not have been possible. The data providers from the PRIMAVERA modelling centres should also be thanked for their hard work complying with the metadata standards and their enthusiasm to use the workflows developed in the project, along with all of PRIMAVERA's users.
 \end{acknowledgements}
 
 %% REFERENCES
