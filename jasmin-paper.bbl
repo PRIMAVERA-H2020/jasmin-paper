@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -32,6 +32,16 @@ CEDA: {CMIP6 CEDA ESGF Node},
 \bibitem[{CEDA(2020{\natexlab{c}})}]{JASMINdocs}
 CEDA: {JASMIN help documentation}, \urlprefix\url{https://help.jasmin.ac.uk/},
   last access: 4 June 2020, 2020{\natexlab{c}}.
+
+\bibitem[{CEDA(2021{\natexlab{a}})}]{JasminJupyter}
+CEDA: {JASMIN Notebook Service},
+  \urlprefix\url{https://help.jasmin.ac.uk/article/4851-jasmin-notebook-service},
+  last access: 4 October 2021, 2021{\natexlab{a}}.
+
+\bibitem[{CEDA(2021{\natexlab{b}})}]{JasminObjectStore}
+CEDA: {Using the JASMIN Object Store},
+  \urlprefix\url{https://help.jasmin.ac.uk/article/4847-using-the-jasmin-object-store},
+  last access: 4 October 2021, 2021{\natexlab{b}}.
 
 \bibitem[{Cinquini et~al.(2014)Cinquini, Crichton, Mattmann, Harney, Shipman,
   Wang, Ananthakrishnan, Miller, Denvil, Morgan, Pobre, Bell, Doutriaux, Drach,
@@ -116,9 +126,9 @@ LBNL: {Lawrence Berkeley National Laboratory Cori supercomputer},
   2021, 2021.
 
 \bibitem[{Mizielinski et~al.(2016)Mizielinski, Stephens, van~der Linden,
-  Bretonniere, Fiore, von Hardenberg, Kolax, Lohmann, Moine, {Le Sager},
+  Bretonni{\`{e}}re, Fiore, von Hardenberg, Kolax, Lohmann, Moine, {Le Sager},
   Semmler, and Senan}]{Mizielinski2016}
-Mizielinski, M.~S., Stephens, A., van~der Linden, P., Bretonniere, P.~A.,
+Mizielinski, M.~S., Stephens, A., van~der Linden, P., Bretonni{\`{e}}re, P.-A.,
   Fiore, S., von Hardenberg, J., Kolax, M., Lohmann, K., Moine, M.-P., {Le
   Sager}, P., Semmler, T., and Senan, R.: {PRIMAVERA Deliverable D9.1 Data
   Management Plan}, \doi{10.5281/ZENODO.3598390}, 2016.
@@ -147,6 +157,23 @@ Nurser, A.~G., Grant, A.~L., Belcher, S.~E., Bell, M., Blaker, A.~T., Megann,
 \bibitem[{Pangeo(2020)}]{Pangeo}
 Pangeo: {Pangeo project web page}, \urlprefix\url{https://pangeo.io/}, last
   access: 2 June 2020, 2020.
+
+\bibitem[{Petrie et~al.(2021)Petrie, Denvil, Ames, Levavasseur, Fiore, Allen,
+  Antonio, Berger, Bretonni{\`{e}}re, Cinquini, Dart, Dwarakanath, Druken,
+  Evans, Franchist{\'{e}}guy, Gardoll, Gerbier, Greenslade, Hassell, Iwi,
+  Juckes, Kindermann, Lacinski, Mirto, Nasser, Nassisi, Nienhouse, Nikonov,
+  Nuzzo, Richards, Ridzwan, Rixen, Serradell, Snow, Stephens, Stockhause,
+  Vahlenkamp, and Wagner}]{gmd-14-629-2021}
+Petrie, R., Denvil, S., Ames, S., Levavasseur, G., Fiore, S., Allen, C.,
+  Antonio, F., Berger, K., Bretonni{\`{e}}re, P.-A., Cinquini, L., Dart, E.,
+  Dwarakanath, P., Druken, K., Evans, B., Franchist{\'{e}}guy, L., Gardoll, S.,
+  Gerbier, E., Greenslade, M., Hassell, D., Iwi, A., Juckes, M., Kindermann,
+  S., Lacinski, L., Mirto, M., Nasser, A.~B., Nassisi, P., Nienhouse, E.,
+  Nikonov, S., Nuzzo, A., Richards, C., Ridzwan, S., Rixen, M., Serradell, K.,
+  Snow, K., Stephens, A., Stockhause, M., Vahlenkamp, H., and Wagner, R.:
+  Coordinating an operational data distribution network for CMIP6 data,
+  Geoscientific Model Development, 14, 629--644, \doi{10.5194/gmd-14-629-2021},
+  2021.
 
 \bibitem[{PRIMAVERA(2015)}]{GrantAgree}
 PRIMAVERA: {Grant Agreement number: 641727 - PRocess-based climate sIMulation:
