@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -239,5 +239,17 @@ Taylor, K.~E., Juckes, M., Balaji, V., Cinquini, L., Denvil, S., Durack, P.~J.,
   Elkington, M., Guilyardi, E., Kharin, S., Lautenschlager, M., Lawrence, B.,
   Nadeau, D., and Stockhause, M.: {CMIP6 Global Attributes, DRS, Filenames,
   Directory Structure, and CV's}, \urlprefix\url{http://goo.gl/v1drZl}, 2018.
+
+\bibitem[{Townsend and Bennett(2020)}]{Bennett2020}
+Townsend, P. and Bennett, V.: {CEDA Annual Report 2019-2020},
+  \urlprefix\url{http://cedadocs.ceda.ac.uk/1489/}, 2020.
+
+\bibitem[{Townsend et~al.(2021)Townsend, Bennett, Juckes, Parton, Petrie,
+  Stephens, Kershaw, Pepler, Jones, Pascoe, Gray, Tucker, Harwood, Williamson,
+  Donegan, Garland, and Smith}]{Townsend2021}
+Townsend, P., Bennett, V., Juckes, M., Parton, G., Petrie, R., Stephens, A.,
+  Kershaw, P., Pepler, S., Jones, M., Pascoe, C., Gray, H., Tucker, W.,
+  Harwood, A., Williamson, E., Donegan, S., Garland, W., and Smith, R.: {CEDA
+  Annual Report 2020-2021}, \doi{10.5281/ZENODO.5592466}, 2021.
 
 \end{thebibliography}
