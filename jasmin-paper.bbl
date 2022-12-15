@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -200,9 +200,13 @@ Schiemann, R., Athanasiadis, P., Barriopedro, D., Doblas-Reyes, F., Lohmann,
   models}, Weather and Climate Dynamics Discussions, 2020, 1--21,
   \doi{10.5194/wcd-2019-19}, 2020.
 
-\bibitem[{Seddon(2020)}]{Seddon2020}
+\bibitem[{Seddon(2020{\natexlab{a}})}]{Seddon2020}
 Seddon, J.: {PRIMAVERA-H2020/primavera-val: Initial release},
-  \doi{10.5281/ZENODO.3596772}, 2020.
+  \doi{10.5281/ZENODO.3596772}, 2020{\natexlab{a}}.
+
+\bibitem[{Seddon(2020{\natexlab{b}})}]{Seddon2020b}
+Seddon, J.: {PRIMAVERA-H2020/stream2-planning: Data Request Summary},
+  \doi{10.5281/zenodo.3921887}, 2020{\natexlab{b}}.
 
 \bibitem[{Seddon and Stephens(2020)}]{Seddon2019}
 Seddon, J. and Stephens, A.: {PRIMAVERA-H2020/primavera-dmt: Updated
