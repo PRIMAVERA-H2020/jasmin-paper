@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -125,6 +125,11 @@ LBNL: {Lawrence Berkeley National Laboratory Cori supercomputer},
   \urlprefix\url{https://www.nersc.gov/systems/cori/}, last access: 5 February
   2021, 2021.
 
+\bibitem[{{Met Office}(2010 - 2022)}]{Iris}
+{Met Office}: Iris: A powerful, format-agnostic, and community-driven Python
+  package for analysing and visualising Earth science data, Exeter, Devon, v3.4
+  edn., \doi{10.5281/zenodo.595182}, 2010 - 2022.
+
 \bibitem[{Mizielinski et~al.(2016)Mizielinski, Stephens, van~der Linden,
   Bretonni{\`{e}}re, Fiore, von Hardenberg, Kolax, Lohmann, Moine, {Le Sager},
   Semmler, and Senan}]{Mizielinski2016}
@@ -199,6 +204,9 @@ Schiemann, R., Athanasiadis, P., Barriopedro, D., Doblas-Reyes, F., Lohmann,
   {The representation of Northern Hemisphere blocking in current global climate
   models}, Weather and Climate Dynamics Discussions, 2020, 1--21,
   \doi{10.5194/wcd-2019-19}, 2020.
+
+\bibitem[{Schulzweida(2022)}]{schulzweida_uwe_2022_7112925}
+Schulzweida, U.: CDO User Guide, \doi{10.5281/zenodo.7112925}, 2022.
 
 \bibitem[{Seddon(2020{\natexlab{a}})}]{Seddon2020}
 Seddon, J.: {PRIMAVERA-H2020/primavera-val: Initial release},

@@ -195,11 +195,13 @@ Table~\ref{rates_achieved} shows the sustained rates achieved when transferring 
 
 The collection of all of PRIMAVERA's data at the CAF was only possible because of the magnitude of the transfer rates that were achieved. If data transfer rates between the HPC centres and the CAF had been insufficient then the scientific analysis performed by PRIMAVERA would have been significantly impacted.
 
-\section{Data Access}
+\section{Data Access and Analysis}
 
 Because the DMT was used to restore data from tape to disk it is possible to analyse the fraction of data produced by the project that was analysed. As of 20th July 2020, 31,048 data requests had been uploaded to JASMIN comprising 1.5~PiB of data. 6,070 unique data requests had been restored at least once, which is 20~\% of the data requests by number. These restored unique data requests contained 426~TiB of data, which is 27~\% of the volume uploaded~\citep{Seddon2020b}. The fact that more data by volume rather than by number of data requests was restored suggests that PRIMAVERA users were interested in analysing the higher volume data requests, which tend to be the higher temporal-frequency variables.
 
 All of the data from the PRIMAVERA simulations was added to the CEDA archives and published to the ESGF. Because of the need to restore the data from tape, publication took over one year to complete.
+
+In PRIMAVERA, users accessed the data using a variety of tools such as CDO~\citep{schulzweida_uwe_2022_7112925}, Python, Iris~\citep{Iris} and ESMValTool. PRIMAVERA provided some resource for the development of ESMValTool, therefore much scientific analysis was completed before ESMValTool was available. ESMValTool will allow for the more efficient analysis of multi-model datasets in future projects.
 
 \section{User Feedback}
 
