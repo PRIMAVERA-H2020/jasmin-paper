@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -125,6 +125,11 @@ LBNL: {Lawrence Berkeley National Laboratory Cori supercomputer},
   \urlprefix\url{https://www.nersc.gov/systems/cori/}, last access: 5 February
   2021, 2021.
 
+\bibitem[{{Met Office}(2010 - 2022)}]{Iris}
+{Met Office}: Iris: A powerful, format-agnostic, and community-driven Python
+  package for analysing and visualising Earth science data, Exeter, Devon, v3.4
+  edn., \doi{10.5281/zenodo.595182}, 2010 - 2022.
+
 \bibitem[{Mizielinski et~al.(2016)Mizielinski, Stephens, van~der Linden,
   Bretonni{\`{e}}re, Fiore, von Hardenberg, Kolax, Lohmann, Moine, {Le Sager},
   Semmler, and Senan}]{Mizielinski2016}
@@ -180,6 +185,16 @@ PRIMAVERA: {Grant Agreement number: 641727 - PRocess-based climate sIMulation:
   AdVances in high resolution modelling and European climate Risk Assessment
   (PRIMAVERA)}, \doi{10.5281/ZENODO.3874429}, 2015.
 
+\bibitem[{Righi et~al.(2020)Righi, Andela, Eyring, Lauer, Predoi, Schlund,
+  Vegas-Regidor, Bock, Br{\"{o}}tz, de~Mora, Diblen, Dreyer, Drost, Earnshaw,
+  Hassler, Koldunov, Little, {Loosveldt Tomas}, and Zimmermann}]{Righi2020}
+Righi, M., Andela, B., Eyring, V., Lauer, A., Predoi, V., Schlund, M.,
+  Vegas-Regidor, J., Bock, L., Br{\"{o}}tz, B., de~Mora, L., Diblen, F.,
+  Dreyer, L., Drost, N., Earnshaw, P., Hassler, B., Koldunov, N., Little, B.,
+  {Loosveldt Tomas}, S., and Zimmermann, K.: {Earth System Model Evaluation
+  Tool (ESMValTool) v2.0 – technical overview}, Geoscientific Model
+  Development, 13, 1179--1199, \doi{10.5194/gmd-13-1179-2020}, 2020.
+
 \bibitem[{Roberts et~al.(2020)Roberts, Camp, Seddon, Vidale, Hodges, Vanniere,
   Mecking, Haarsma, Bellucci, Scoccimarro, Caron, Chauvin, Terray, Valcke,
   Moine, Putrasahan, Roberts, Senan, Zarzycki, and Ullrich}]{Roberts2020}
@@ -200,9 +215,16 @@ Schiemann, R., Athanasiadis, P., Barriopedro, D., Doblas-Reyes, F., Lohmann,
   models}, Weather and Climate Dynamics Discussions, 2020, 1--21,
   \doi{10.5194/wcd-2019-19}, 2020.
 
-\bibitem[{Seddon(2020)}]{Seddon2020}
+\bibitem[{Schulzweida(2022)}]{schulzweida_uwe_2022_7112925}
+Schulzweida, U.: CDO User Guide, \doi{10.5281/zenodo.7112925}, 2022.
+
+\bibitem[{Seddon(2020{\natexlab{a}})}]{Seddon2020}
 Seddon, J.: {PRIMAVERA-H2020/primavera-val: Initial release},
-  \doi{10.5281/ZENODO.3596772}, 2020.
+  \doi{10.5281/ZENODO.3596772}, 2020{\natexlab{a}}.
+
+\bibitem[{Seddon(2020{\natexlab{b}})}]{Seddon2020b}
+Seddon, J.: {PRIMAVERA-H2020/stream2-planning: Data Request Summary},
+  \doi{10.5281/zenodo.3921887}, 2020{\natexlab{b}}.
 
 \bibitem[{Seddon and Stephens(2020)}]{Seddon2019}
 Seddon, J. and Stephens, A.: {PRIMAVERA-H2020/primavera-dmt: Updated
@@ -239,5 +261,17 @@ Taylor, K.~E., Juckes, M., Balaji, V., Cinquini, L., Denvil, S., Durack, P.~J.,
   Elkington, M., Guilyardi, E., Kharin, S., Lautenschlager, M., Lawrence, B.,
   Nadeau, D., and Stockhause, M.: {CMIP6 Global Attributes, DRS, Filenames,
   Directory Structure, and CV's}, \urlprefix\url{http://goo.gl/v1drZl}, 2018.
+
+\bibitem[{Townsend and Bennett(2020)}]{Bennett2020}
+Townsend, P. and Bennett, V.: {CEDA Annual Report 2019-2020},
+  \urlprefix\url{http://cedadocs.ceda.ac.uk/1489/}, 2020.
+
+\bibitem[{Townsend et~al.(2021)Townsend, Bennett, Juckes, Parton, Petrie,
+  Stephens, Kershaw, Pepler, Jones, Pascoe, Gray, Tucker, Harwood, Williamson,
+  Donegan, Garland, and Smith}]{Townsend2021}
+Townsend, P., Bennett, V., Juckes, M., Parton, G., Petrie, R., Stephens, A.,
+  Kershaw, P., Pepler, S., Jones, M., Pascoe, C., Gray, H., Tucker, W.,
+  Harwood, A., Williamson, E., Donegan, S., Garland, W., and Smith, R.: {CEDA
+  Annual Report 2020-2021}, \doi{10.5281/ZENODO.5592466}, 2021.
 
 \end{thebibliography}
