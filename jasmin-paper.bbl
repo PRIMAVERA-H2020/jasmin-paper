@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -112,6 +112,17 @@ Juckes, M., Taylor, K.~E., Durack, P.~J., Lawrence, B., Mizielinski, M.~S.,
   CMIP6 Data Request (DREQ, version 01.00.31)}, Geoscientific Model
   Development, 13, 201--224, \doi{10.5194/gmd-13-201-2020}, 2020.
 
+\bibitem[{Kluyver et~al.(2016)Kluyver, Ragan-Kelley, P{\'e}rez, Granger,
+  Bussonnier, Frederic, Kelley, Hamrick, Grout, Corlay, Ivanov, Avila, Abdalla,
+  and Willing}]{Kluyver2016jupyter}
+Kluyver, T., Ragan-Kelley, B., P{\'e}rez, F., Granger, B., Bussonnier, M.,
+  Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P.,
+  Avila, D., Abdalla, S., and Willing, C.: Jupyter Notebooks -- a publishing
+  format for reproducible computational workflows, in: Positioning and Power in
+  Academic Publishing: Players, Agents and Agendas, edited by Loizides, F. and
+  Schmidt, B., pp. 87 -- 90, IOS Press, \doi{10.3233/978-1-61499-649-1-87},
+  2016.
+
 \bibitem[{Lawrence et~al.(2013)Lawrence, Bennett, Churchill, Juckes, Kershaw,
   Pascoe, Pepler, Pritchard, and Stephens}]{lawrence2013storing}
 Lawrence, B.~N., Bennett, V.~L., Churchill, J., Juckes, M., Kershaw, P.,
@@ -124,6 +135,12 @@ Lawrence, B.~N., Bennett, V.~L., Churchill, J., Juckes, M., Kershaw, P.,
 LBNL: {Lawrence Berkeley National Laboratory Cori supercomputer},
   \urlprefix\url{https://www.nersc.gov/systems/cori/}, last access: 5 February
   2021, 2021.
+
+\bibitem[{Marriott et~al.(2015)Marriott, Adam, Henderson, Mukherjee, Boeckel,
+  Sperling, Espie, Beck, Sing, Kilian, and Herrb}]{tmux}
+Marriott, N., Adam, T., Henderson, S., Mukherjee, A., Boeckel, B., Sperling,
+  S., Espie, M., Beck, B., Sing, J., Kilian, M., and Herrb, M.: tmux terminal
+  multiplexer, v1.8 edn., \urlprefix\url{https://github.com/tmux/tmux}, 2015.
 
 \bibitem[{{Met Office}(2010 - 2022)}]{Iris}
 {Met Office}: Iris: A powerful, format-agnostic, and community-driven Python
@@ -273,5 +290,11 @@ Townsend, P., Bennett, V., Juckes, M., Parton, G., Petrie, R., Stephens, A.,
   Kershaw, P., Pepler, S., Jones, M., Pascoe, C., Gray, H., Tucker, W.,
   Harwood, A., Williamson, E., Donegan, S., Garland, W., and Smith, R.: {CEDA
   Annual Report 2020-2021}, \doi{10.5281/ZENODO.5592466}, 2021.
+
+\bibitem[{Ylonen(1996)}]{ssh}
+Ylonen, T.: {SSH} - Secure Login Connections Over the Internet, in: 6th USENIX
+  Security Symposium (USENIX Security 96), USENIX Association, San Jose, CA,
+  \urlprefix\url{https://www.usenix.org/conference/6th-usenix-security-symposium/ssh-secure-login-connections-over-internet},
+  1996.
 
 \end{thebibliography}
