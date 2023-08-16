@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -18,6 +18,12 @@ Balaji, V., Taylor, K.~E., Juckes, M., Lawrence, B.~N., Durack, P.~J.,
   {Requirements for a global data infrastructure in support of CMIP6},
   Geoscientific Model Development, 11, 3659--3680,
   \doi{10.5194/gmd-11-3659-2018}, 2018.
+
+\bibitem[{Beck et~al.(2001)Beck, Beedle, Van~Bennekum, Cockburn, Cunningham,
+  Fowler, Grenning, Highsmith, Hunt, Jeffries et~al.}]{beck2001agile}
+Beck, K., Beedle, M., Van~Bennekum, A., Cockburn, A., Cunningham, W., Fowler,
+  M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R., et~al.: The agile
+  manifesto, \urlprefix\url{https://agilemanifesto.org/}, 2001.
 
 \bibitem[{CEDA(2020{\natexlab{a}})}]{CEDAArchive}
 CEDA: {Centre for Environmental Data Analysis Archive Catalogue},
@@ -255,6 +261,12 @@ Seddon, J., Mizielinski, M.~S., Roberts, M., Stephens, A., Hegewald, J.,
   Moine, M.-P., Roberts, C., Senan, R., and Fladrich, U.: {Deliverable D9.6
   Review of DMP and lessons learnt for future projects},
   \doi{10.5281/ZENODO.3961932}, 2020.
+
+\bibitem[{Senior et~al.(2020)Senior, Finney, Owiti, Rowell, Marsham, Jackson,
+  Berthou, Kendon, and Misiani}]{senior_catherine_2020_4316467}
+Senior, C., Finney, D., Owiti, Z., Rowell, D., Marsham, J., Jackson, L.,
+  Berthou, S., Kendon, E., and Misiani, H.: {Technical guidelines for using
+  CP4-Africa simulation data}, \doi{10.5281/zenodo.4316467}, 2020.
 
 \bibitem[{Senior(2019)}]{Senior2019}
 Senior, C.~A.: {P25-Present: Present-day 25km regional pan-Africa data},
