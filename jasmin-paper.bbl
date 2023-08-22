@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -251,6 +251,9 @@ Seddon, J.: {PRIMAVERA-H2020/primavera-val: Initial release},
 \bibitem[{Seddon(2020{\natexlab{b}})}]{Seddon2020b}
 Seddon, J.: {PRIMAVERA-H2020/stream2-planning: Data Request Summary},
   \doi{10.5281/zenodo.3921887}, 2020{\natexlab{b}}.
+
+\bibitem[{Seddon(2023)}]{generic_dmt}
+Seddon, J.: MetOffice/primavera-dmt, \doi{10.5281/zenodo.8273458}, 2023.
 
 \bibitem[{Seddon and Stephens(2020)}]{Seddon2019}
 Seddon, J. and Stephens, A.: {PRIMAVERA Data Management Tool V2.10},
