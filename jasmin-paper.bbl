@@ -7,8 +7,8 @@
   \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{aws(2022)}]{aws_calculator}
-AWS Pricing Calculator, \urlprefix\url{https://calculator.aws/}, 2022.
+\bibitem[{AWS(2022)}]{aws_calculator}
+AWS: AWS Pricing Calculator, \urlprefix\url{https://calculator.aws/}, 2022.
 
 \bibitem[{Balaji et~al.(2018)Balaji, Taylor, Juckes, Lawrence, Durack,
   Lautenschlager, Blanton, Cinquini, Denvil, Elkington, Guglielmo, Guilyardi,
