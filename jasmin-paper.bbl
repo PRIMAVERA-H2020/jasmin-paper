@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -6,6 +6,9 @@
   \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
   \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{AWS(2022)}]{aws_calculator}
+AWS: AWS Pricing Calculator, \urlprefix\url{https://calculator.aws/}, 2022.
 
 \bibitem[{Balaji et~al.(2018)Balaji, Taylor, Juckes, Lawrence, Durack,
   Lautenschlager, Blanton, Cinquini, Denvil, Elkington, Guglielmo, Guilyardi,
@@ -18,6 +21,12 @@ Balaji, V., Taylor, K.~E., Juckes, M., Lawrence, B.~N., Durack, P.~J.,
   {Requirements for a global data infrastructure in support of CMIP6},
   Geoscientific Model Development, 11, 3659--3680,
   \doi{10.5194/gmd-11-3659-2018}, 2018.
+
+\bibitem[{Beck et~al.(2001)Beck, Beedle, Van~Bennekum, Cockburn, Cunningham,
+  Fowler, Grenning, Highsmith, Hunt, Jeffries et~al.}]{beck2001agile}
+Beck, K., Beedle, M., Van~Bennekum, A., Cockburn, A., Cunningham, W., Fowler,
+  M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R., et~al.: The agile
+  manifesto, \urlprefix\url{https://agilemanifesto.org/}, 2001.
 
 \bibitem[{CEDA(2020{\natexlab{a}})}]{CEDAArchive}
 CEDA: {Centre for Environmental Data Analysis Archive Catalogue},
@@ -32,16 +41,6 @@ CEDA: {CMIP6 CEDA ESGF Node},
 \bibitem[{CEDA(2020{\natexlab{c}})}]{JASMINdocs}
 CEDA: {JASMIN help documentation}, \urlprefix\url{https://help.jasmin.ac.uk/},
   last access: 4 June 2020, 2020{\natexlab{c}}.
-
-\bibitem[{CEDA(2021{\natexlab{a}})}]{JasminJupyter}
-CEDA: {JASMIN Notebook Service},
-  \urlprefix\url{https://help.jasmin.ac.uk/article/4851-jasmin-notebook-service},
-  last access: 4 October 2021, 2021{\natexlab{a}}.
-
-\bibitem[{CEDA(2021{\natexlab{b}})}]{JasminObjectStore}
-CEDA: {Using the JASMIN Object Store},
-  \urlprefix\url{https://help.jasmin.ac.uk/article/4847-using-the-jasmin-object-store},
-  last access: 4 October 2021, 2021{\natexlab{b}}.
 
 \bibitem[{Cinquini et~al.(2014)Cinquini, Crichton, Mattmann, Harney, Shipman,
   Wang, Ananthakrishnan, Miller, Denvil, Morgan, Pobre, Bell, Doutriaux, Drach,
@@ -111,6 +110,17 @@ Juckes, M., Taylor, K.~E., Durack, P.~J., Lawrence, B., Mizielinski, M.~S.,
   Pamment, A., Peterschmitt, J.-Y., Rixen, M., and S{\'{e}}n{\'{e}}si, S.: {The
   CMIP6 Data Request (DREQ, version 01.00.31)}, Geoscientific Model
   Development, 13, 201--224, \doi{10.5194/gmd-13-201-2020}, 2020.
+
+\bibitem[{Kluyver et~al.(2016)Kluyver, Ragan-Kelley, P{\'e}rez, Granger,
+  Bussonnier, Frederic, Kelley, Hamrick, Grout, Corlay, Ivanov, Avila, Abdalla,
+  and Willing}]{Kluyver2016jupyter}
+Kluyver, T., Ragan-Kelley, B., P{\'e}rez, F., Granger, B., Bussonnier, M.,
+  Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P.,
+  Avila, D., Abdalla, S., and Willing, C.: Jupyter Notebooks -- a publishing
+  format for reproducible computational workflows, in: Positioning and Power in
+  Academic Publishing: Players, Agents and Agendas, edited by Loizides, F. and
+  Schmidt, B., pp. 87 -- 90, IOS Press, \doi{10.3233/978-1-61499-649-1-87},
+  2016.
 
 \bibitem[{Lawrence et~al.(2013)Lawrence, Bennett, Churchill, Juckes, Kershaw,
   Pascoe, Pepler, Pritchard, and Stephens}]{lawrence2013storing}
@@ -226,6 +236,9 @@ Seddon, J.: {PRIMAVERA-H2020/primavera-val: Initial release},
 Seddon, J.: {PRIMAVERA-H2020/stream2-planning: Data Request Summary},
   \doi{10.5281/zenodo.3921887}, 2020{\natexlab{b}}.
 
+\bibitem[{Seddon(2023)}]{generic_dmt}
+Seddon, J.: MetOffice/primavera-dmt, \doi{10.5281/zenodo.8273458}, 2023.
+
 \bibitem[{Seddon and Stephens(2020)}]{Seddon2019}
 Seddon, J. and Stephens, A.: {PRIMAVERA Data Management Tool V2.10},
   \doi{10.5281/zenodo.4011770}, 2020.
@@ -238,6 +251,12 @@ Seddon, J., Mizielinski, M.~S., Roberts, M., Stephens, A., Hegewald, J.,
   Moine, M.-P., Roberts, C., Senan, R., and Fladrich, U.: {Deliverable D9.6
   Review of DMP and lessons learnt for future projects},
   \doi{10.5281/ZENODO.3961932}, 2020.
+
+\bibitem[{Senior et~al.(2020)Senior, Finney, Owiti, Rowell, Marsham, Jackson,
+  Berthou, Kendon, and Misiani}]{senior_catherine_2020_4316467}
+Senior, C., Finney, D., Owiti, Z., Rowell, D., Marsham, J., Jackson, L.,
+  Berthou, S., Kendon, E., and Misiani, H.: {Technical guidelines for using
+  CP4-Africa simulation data}, \doi{10.5281/zenodo.4316467}, 2020.
 
 \bibitem[{Senior(2019)}]{Senior2019}
 Senior, C.~A.: {P25-Present: Present-day 25km regional pan-Africa data},
@@ -273,5 +292,11 @@ Townsend, P., Bennett, V., Juckes, M., Parton, G., Petrie, R., Stephens, A.,
   Kershaw, P., Pepler, S., Jones, M., Pascoe, C., Gray, H., Tucker, W.,
   Harwood, A., Williamson, E., Donegan, S., Garland, W., and Smith, R.: {CEDA
   Annual Report 2020-2021}, \doi{10.5281/ZENODO.5592466}, 2021.
+
+\bibitem[{Ylonen(1996)}]{ssh}
+Ylonen, T.: {SSH} - Secure Login Connections Over the Internet, in: 6th USENIX
+  Security Symposium (USENIX Security 96), USENIX Association, San Jose, CA,
+  \urlprefix\url{https://www.usenix.org/conference/6th-usenix-security-symposium/ssh-secure-login-connections-over-internet},
+  1996.
 
 \end{thebibliography}
